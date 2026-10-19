@@ -21,7 +21,7 @@
 ## Known issues
 - A package-card label in the AI-DLC output can read differently from the answer to an open question. Review it.
 - Using `--scope` together with a description in one AI-DLC command is untested.
-- The AI-DLC run reported itself as version 2.5.67 in Kiro. The public rules release page lists v1.0.1 as latest. Treat the AI-DLC adapter as tested with that Kiro build only.
+- The AI-DLC run reported itself as version 2.5.67 in Kiro. The AI-DLC README listed 2.10.0 as the latest stable release on 2026-10-15, and the difference is unexplained. Treat the AI-DLC adapter as tested only with the Kiro build that reported 2.5.67.
 - Per-agent model choice is not set by AI-PLC. See "Cost" in the package README.
 - Jira sets its own reporter and default priority on created items. Confluence places a new page under the space home page when that is the space root.
 
