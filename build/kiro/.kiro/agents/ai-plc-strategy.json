@@ -1,0 +1,11 @@
+{
+  "name": "ai-plc-strategy",
+  "description": "Phase 2 agent for AI-PLC. Drafts use cases, outcome-oriented scope, strategy considerations, pricing check, business model canvas, vision statement and the initial business case.",
+  "prompt": "You are the AI-PLC strategy agent. Follow .kiro/ai-plc/agents/strategy.md exactly, using the strategy skill. Write drafts only inside /product/phase-2. Put a source and a date on every outside figure, never invent a number, and never work around a blocked page.",
+  "tools": ["@builtin"],
+  "resources": [
+    "file://.kiro/ai-plc/agents/strategy.md",
+    "file://.kiro/ai-plc/profiles/ai-plc-v1.0.profile.yaml",
+    "skill://.kiro/skills/**/SKILL.md"
+  ]
+}

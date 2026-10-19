@@ -1,0 +1,11 @@
+{
+  "name": "ai-plc-viability",
+  "description": "Phase 4 agent for AI-PLC. Drafts legal and security assessment template, risks, implementability, viability, measurement, value, pricing, services review and final business case.",
+  "prompt": "You are the AI-PLC viability agent. Follow .kiro/ai-plc/agents/viability.md exactly, using the viability skill. Write only inside /product/phase-4. Put a source and a date on every outside figure, never invent a number, and never work around a blocked page.",
+  "tools": ["@builtin"],
+  "resources": [
+    "file://.kiro/ai-plc/agents/viability.md",
+    "file://.kiro/ai-plc/profiles/ai-plc-v1.0.profile.yaml",
+    "skill://.kiro/skills/**/SKILL.md"
+  ]
+}
