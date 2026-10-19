@@ -5,3 +5,4 @@ __pycache__/
 # Never commit credentials or a project's working files
 .env
 product/
+site/

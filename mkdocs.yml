@@ -1,0 +1,52 @@
+site_name: AI-PLC Documentation
+site_description: An AI-native product lifecycle for product managers
+site_url: https://lasith-tekly.github.io/ai-plc/
+repo_url: https://github.com/lasith-tekly/ai-plc
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+    - content.action.edit
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  - User guide:
+      - Getting started:
+          - Introduction: guide/introduction.md
+          - Install: guide/install.md
+          - Your first run: guide/first-run.md
+      - Core concepts:
+          - Lifecycle: guide/lifecycle.md
+          - Run modes: guide/run-modes.md
+          - Checkpoints and gates: guide/gates.md
+      - Day to day:
+          - What gets written: guide/files.md
+          - Connectors (MCP): MCP-SETUP.md
+      - Help:
+          - Troubleshooting: guide/troubleshooting.md
+          - Glossary: guide/glossary.md
+  - Customisation: customisation/index.md
+  - Developer reference:
+      - Overview: reference/index.md
+      - Agents: reference/agents.md
+      - Skills: reference/skills.md
+      - Deliverables: reference/deliverables.md
+      - Templates: reference/templates.md
+      - Build the packages: reference/build.md
+      - Test guide: TEST-GUIDE.md
+      - Build facts: BUILD-FACTS.md
+  - Roadmap: roadmap.md
