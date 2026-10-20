@@ -1,0 +1,48 @@
+name: Test report
+description: Tell us how a test run of AI-PLC went
+title: "Test report: "
+labels: ["test-report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for testing. Please do not include passwords, tokens or confidential content. Use a dummy or low-stakes idea.
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Tool
+      options: [Kiro, Claude Code (plugin), Claude Code (drop-in folder), Codex, GitHub Copilot, Other]
+    validations: {required: true}
+  - type: input
+    id: version
+    attributes:
+      label: Tool and AI-PLC version
+      placeholder: "e.g. Kiro 0.x, AI-PLC 1.0.0-rc1"
+  - type: input
+    id: command
+    attributes:
+      label: Command you ran
+      placeholder: '/ai-plc --ideation "..."'
+    validations: {required: true}
+  - type: dropdown
+    id: reached
+    attributes:
+      label: How far did you get?
+      options: [Did not start, Phase 1, Checkpoint 1, Phase 2, Gate 1, Phase 3, Checkpoint 2, Phase 4, Gate 2, Outcome Pack, Delivery material]
+    validations: {required: true}
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What went wrong or felt unclear?
+    validations: {required: true}
+  - type: textarea
+    id: good
+    attributes:
+      label: What worked well?
+  - type: checkboxes
+    id: approve
+    attributes:
+      label: Safety
+      options:
+        - label: The tool approved something for me (a deliverable, checkpoint or gate). This would be a serious bug.
+        - label: The tool wrote outside the /product folder.

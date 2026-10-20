@@ -34,6 +34,7 @@ nav:
       - "5. Decision points": guide/gates.md
       - "6. What gets written": guide/files.md
       - "7. Connectors (optional)": MCP-SETUP.md
+      - Help us test: guide/testing.md
   - Going deeper:
       - Lifecycle: guide/lifecycle.md
       - Troubleshooting: guide/troubleshooting.md
