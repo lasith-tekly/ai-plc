@@ -1,4 +1,4 @@
-# Connecting AI-PLC to Notion, Jira and Confluence (MCP)
+# 8. Connecting AI-PLC to Notion, Jira and Confluence (MCP)
 
 AI-PLC can read the sources you name at the start of a run, and send approved results back after you approve a dry run. It uses MCP servers that you connect yourself. Nothing here ships with credentials.
 

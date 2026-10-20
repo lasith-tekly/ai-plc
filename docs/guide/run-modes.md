@@ -1,4 +1,4 @@
-# Choose a run mode
+# 3. Choose a run mode
 
 A run mode is how far you want AI-PLC to take your idea in one go. You choose it when you start. If you are not sure what the phases are, read [What is AI-PLC?](what-is-ai-plc.md) first.
 

@@ -1,4 +1,4 @@
-# What is AI-PLC?
+# 1. What is AI-PLC?
 
 AI-PLC stands for **AI-native Product Lifecycle**. It is a way of taking a product idea from "we think there is something here" to "here is what to build, and why", with AI doing the drafting and you making every decision.
 

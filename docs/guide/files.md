@@ -1,4 +1,4 @@
-# What gets written, and where
+# 7. What gets written, and where
 
 Everything is written inside a `/product` folder in your project. Nothing is written elsewhere.
 

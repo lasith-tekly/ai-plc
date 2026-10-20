@@ -1,4 +1,4 @@
-# Install
+# 2. Install
 
 This page takes you from the download to a project that is ready for your first run. No coding is needed. Allow some time to read it through once before you start.
 

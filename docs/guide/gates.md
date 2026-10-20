@@ -1,4 +1,4 @@
-# Decision points: checkpoints and gates
+# 6. Decision points: checkpoints and gates
 
 AI-PLC stops four times and waits for a person to decide. Two are **checkpoints** and two are **gates**.
 

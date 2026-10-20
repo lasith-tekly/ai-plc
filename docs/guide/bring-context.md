@@ -1,4 +1,4 @@
-# Bring your own context
+# 4. Bring your own context
 
 You usually know things before you start: notes from a conversation, company principles, past research, constraints. If you give them to AI-PLC up front, it asks fewer questions and the drafts start from what you already know. This page says how.
 
