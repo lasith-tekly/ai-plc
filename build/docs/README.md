@@ -1,4 +1,4 @@
-# AI-PLC: multi-tool packages (release candidate)
+# AI-PLC: multi-tool packages (version 1.0.0-rc1)
 
 AI-PLC is an AI-native product lifecycle for product managers. A PM runs one command, the AI drafts each deliverable, and humans review and approve at every stop. These packages load the same neutral files into four tools.
 
@@ -35,18 +35,18 @@ Adapters for `--full`: `scrum`, `ai-dlc`, `plain-markdown`. Everything is writte
 
 See `TEST-GUIDE.md` for the shared test and the pass checks.
 
-## Testing this pre-release
+## Before you start, and how to give feedback
 
-This is a pre-release for testers. Thank you for trying it. Please read these first.
+Please read these first.
 
-- **Use a test project and a dummy or low-stakes idea.** Do not use confidential company material.
+- **Try it first on a test project with a dummy or low-stakes idea.** Do not use confidential company material.
 - **Do not connect company systems.** Connecting Jira, Confluence or Notion is optional. If you try it, use a personal or sandbox site and read `MCP-SETUP.md`.
 - **Check your organisation's policy** before using any AI tool with company data.
 - **Check every figure against its source** before you rely on it. The AI can be wrong.
 - **Nothing is approved until you approve it.** If any tool approves a deliverable, checkpoint or gate for you, that is a bug. Please report it.
 - Kiro is the most tested. Claude Code and Codex were run partway on earlier builds. GitHub Copilot has not been run.
 
-**How to report.** Open an issue at https://github.com/lasith-tekly/ai-plc/issues and choose "Test report". Tell us the tool and version, the command you ran, how far you got, and what went wrong or felt unclear. `TEST-GUIDE.md` lists the pass checks. Screenshots help. Never include passwords, tokens or confidential content.
+**Feedback.** Open an issue at https://github.com/lasith-tekly/ai-plc/issues and choose "Feedback". Tell us the tool and version, the command you ran, how far you got, and what went wrong or felt unclear. `TEST-GUIDE.md` lists the pass checks. Screenshots help. Never include passwords, tokens or confidential content.
 
 ## Cost
 

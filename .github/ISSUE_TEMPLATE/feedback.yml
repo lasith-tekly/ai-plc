@@ -1,12 +1,12 @@
-name: Test report
-description: Tell us how a test run of AI-PLC went
-title: "Test report: "
-labels: ["test-report"]
+name: Feedback
+description: Tell us how a run of AI-PLC went
+title: "Feedback: "
+labels: ["feedback"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for testing. Please do not include passwords, tokens or confidential content. Use a dummy or low-stakes idea.
+        Thank you for the feedback. Please do not include passwords, tokens or confidential content.
   - type: dropdown
     id: tool
     attributes:

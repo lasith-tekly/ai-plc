@@ -1,6 +1,6 @@
-# AI-PLC v1.0.0-rc1 (pre-release for testers)
+# AI-PLC v1.0.0-rc1
 
-This is a release candidate for testing. It is not v1.0.0. See "Testing this pre-release" in `README.md` inside the zip, and the "Help us test" page in the documentation.
+See "Before you start, and how to give feedback" in `README.md` inside the zip, and the "Feedback" page in the documentation.
 
 ## What is in v1.0
 - 7 specialist agents plus an orchestrator, 12 skills, one neutral profile (AI-PLC v1.0), templates.
