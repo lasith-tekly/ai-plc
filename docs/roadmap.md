@@ -1,7 +1,7 @@
 # Roadmap
 
 ## Where AI-PLC is today
-Stage 1 (Product Ideation) and Stage 2 (Product Planning) are automated. Stage 3 (Product Development) is a handover: AI-PLC produces outcomes and delivery material, and your team builds. Stage 4 (Product Launching and Sunsetting) is not built. See [The product lifecycle](lifecycle.md).
+Stage 1 (Product Ideation) and Stage 2 (Product Planning) are automated. Stage 3 (Product Development) is a handover: AI-PLC produces outcomes and delivery material, and your team builds. Stage 4 (Product Launching and Sunsetting) is not built. See [The product lifecycle](guide/lifecycle.md).
 
 ## Before v1.0 is published
 - Second full run on a real idea, including a change of direction.
