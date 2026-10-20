@@ -10,7 +10,7 @@ This section shows what AI-PLC produced on **one complete run**, so you can judg
 | Level | What you get | Where |
 | --- | --- | --- |
 | 1. The map | The whole run on one page | This page |
-| 2. Each stage | Every output, what it is and how it was built | [Stage 1: Ideation](ideation.md), [Stage 2: Planning](planning.md), [Decisions and reviews](decisions.md), [The Outcome Pack](outcome-pack.md), [Delivery material](delivery.md) |
+| 2. Each stage | Every output, what it is and how it was built | [Stage 1: Ideation](ideation.md), [Stage 2: Planning](planning.md), [Decisions and reviews](decisions.md), [The Outcome Pack](outcome-pack.md), [Delivery material](delivery.md), [The AI-DLC hand-over](ai-dlc.md) |
 | 3. The detail | Real excerpts, diagrams, and one outcome followed from idea to user story | The **Go deeper** blocks on each page, [Dependencies at every level](dependencies.md), [Follow one outcome end to end](trace-one-outcome.md) |
 
 ## The run in one picture
@@ -66,6 +66,7 @@ All figures were counted from the files the run wrote.
 | Decision records and reviews | What each person decided, and what the independent reviewer found first | [Decisions and reviews](decisions.md) |
 | Outcome Pack | Nine measurable outcomes, their dependency map, delivery drops, carried items | [The Outcome Pack](outcome-pack.md) |
 | Delivery material | Requirements, epics, 115 stories with acceptance criteria, dependency maps, roadmap, traceability | [Delivery material](delivery.md) |
+| AI-DLC hand-over | Nine self-contained briefs and a hand-over order, for teams using AI-DLC | [The AI-DLC hand-over](ai-dlc.md) |
 
 ## What to notice
 

@@ -5,7 +5,7 @@
 | Adapter | What you get | Tested in this project |
 | --- | --- | --- |
 | `scrum` | Requirements, epics, user stories with acceptance criteria, dependency maps, a roadmap and an index | Yes, shown on this page |
-| `ai-dlc` | Briefs for the AI-DLC method, in its own order | Yes (with AI-DLC 2.5.67 as reported by Kiro) |
+| `ai-dlc` | One brief per outcome plus a hand-over order, for teams using the AI-DLC method. See [The AI-DLC hand-over](ai-dlc.md) | Yes (with AI-DLC 2.5.67 as reported by Kiro) |
 | `plain-markdown` | One plain outcome list a team can use without any other tooling | Yes |
 
 This page follows the **Scrum** run, because it is the most detailed. It is built by the **delivery agent** with the `delivery-scrum` skill, after the Outcome Pack is issued.
@@ -132,4 +132,4 @@ The `plain-markdown` adapter produces **one file**, `outcome-list.md`: all nine 
 
 After this, your team builds. AI-PLC v1.0 ends at the handover: outcomes with measures, and the delivery material. Stage 3, Product Development, is yours, and Stage 4, Launching and Sunsetting, is on the [roadmap](../roadmap.md).
 
-**Next:** [Follow one outcome end to end](trace-one-outcome.md)
+**Next:** [The AI-DLC hand-over](ai-dlc.md)
