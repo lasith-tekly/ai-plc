@@ -2,7 +2,7 @@
 
 ## What AI-PLC does
 
-You give it a product idea. It works through four phases (see [Lifecycle](lifecycle.md)) and writes each deliverable as a markdown file in a `/product` folder in your project. At each stop it waits for you to approve, ask for changes, pivot or stop.
+You give it a product idea. It works through four phases (see [What is AI-PLC?](what-is-ai-plc.md)) and writes each deliverable as a markdown file in a `/product` folder in your project. At each stop it waits for you to approve, ask for changes, pivot or stop.
 
 ## What it does not do
 

@@ -11,7 +11,7 @@ AI-PLC v1.0 has four phases, two checkpoints and two gates, then an Outcome Pack
 | After Gate 2 | Outcome Definition | Outcome Pack issued |
 | `--full` only | Delivery adapter | Requirements, briefs or outcome list |
 
-A **checkpoint** is a product decision. A **gate** is a portfolio decision, taken on a business case. See [Checkpoints and gates](gates.md).
+A **checkpoint** is a product decision. A **gate** is an investment decision, taken on a business case. See [Decision points](gates.md).
 
 ## Every deliverable follows the same loop
 

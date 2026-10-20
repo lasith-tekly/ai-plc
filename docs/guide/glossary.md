@@ -2,11 +2,11 @@
 
 **Adapter**: the way `--full` turns an Outcome Pack into delivery material: `scrum`, `ai-dlc` or `plain-markdown`.
 
-**Checkpoint**: a product decision after phase 1 or 3.
+**Checkpoint**: a product decision after phase 1 or 3: "are we on the right track?"
 
 **Dry run**: a file showing exactly what would be created in a connected tool. Nothing is written until you approve it.
 
-**Gate**: a portfolio decision after phase 2 or 4, taken on a business case.
+**Gate**: an investment decision after phase 2 or 4, taken on a business case: "is this worth more money and people?"
 
 **Known issue**: a finding on an approved file that was accepted rather than fixed. It is listed in the pack.
 

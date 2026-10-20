@@ -6,7 +6,7 @@ It is plain files: markdown skills, agent roles, a YAML profile and templates th
 
 ## Where to start
 
-- New here? Read [Introduction](guide/introduction.md), then [Install](guide/install.md) and [Your first run](guide/first-run.md).
+- New here? Read [What is AI-PLC?](guide/what-is-ai-plc.md), then [Install](guide/install.md) and [Your first run](guide/first-run.md).
 - Want to know what it produces? See [Lifecycle](guide/lifecycle.md) and [Deliverables](reference/deliverables.md).
 - Connecting Jira, Confluence or Notion? See [Connectors](MCP-SETUP.md).
 

@@ -30,6 +30,6 @@ After phase 1 a new reviewer agent checks the approved files and reports finding
 
 ## 6. Carry on
 
-Phase 2 then ends at Gate 1 with the initial business case. `--ideation` stops there. See [Run modes](run-modes.md) for the longer ones.
+Phase 2 then ends at Gate 1, an investment decision on the initial business case. `--ideation` stops there. See [Choose a run mode](run-modes.md) for the longer ones.
 
 You can close the session at any stop. Next time, run the command again and it resumes from `/product`.
