@@ -17,10 +17,10 @@ Who decides depends on your organisation. AI-PLC does not know your approval cha
 
 | Stop | Comes after | What you are deciding |
 | --- | --- | --- |
-| Checkpoint 1 | Phase 1: assess market and customers | Do we understand the problem, the market and the customers well enough to go on? |
-| Gate 1 | Phase 2: define vision and strategy | Is the **initial business case** strong enough to keep investing? |
-| Checkpoint 2 | Phase 3: converge on solution | Is this the right first solution and MVP scope? |
-| Gate 2 | Phase 4: evaluate viability | Is the **final business case** strong enough to commit to building? |
+| Checkpoint 1 | Phase 1: assess market and customers (inside Ideation) | Do we understand the problem, the market and the customers well enough to go on? |
+| Gate 1 | Phase 2: define vision and strategy (closes **Ideation**) | Is the **initial business case** strong enough to keep investing? |
+| Checkpoint 2 | Phase 3: converge on solution (inside Planning) | Is this the right first solution and MVP scope? |
+| Gate 2 | Phase 4: evaluate viability (closes **Planning**) | Is the **final business case** strong enough to commit to building? |
 
 ## What happens at each stop
 

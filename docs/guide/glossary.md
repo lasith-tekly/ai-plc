@@ -24,6 +24,8 @@
 
 **Snapshot**: a saved copy of something read from a connected source, kept in `/product/inputs/`.
 
+**Stage**: one of the four stages of a product's life: Product Ideation, Product Planning, Product Development, and Product Launching and Sunsetting. AI-PLC v1.0 automates the first two. See [The product lifecycle](lifecycle.md).
+
 **Stale**: a deliverable that depended on something revised or sent back, so it needs checking or redoing.
 
 **SYNTHETIC**: a label on placeholder numbers that are not real evidence.

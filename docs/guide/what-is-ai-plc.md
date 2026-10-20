@@ -8,33 +8,35 @@ Early product work is slow and uneven. Someone has to research the market, defin
 
 AI-PLC runs that work as one connected flow. Each piece of work is a **deliverable**: a short document such as a market definition, a vision statement or a risk assessment. Each deliverable is drafted by an AI agent, checked, and then reviewed and approved by you. Later deliverables are built only from approved earlier ones, so the thread of evidence stays intact.
 
-## The idea in one picture
+## The four stages of a product's life
 
-| Step | Phase | Then a person decides |
+AI-PLC follows the life of a product in four stages.
+
+| Stage | What it is | AI-PLC v1.0 |
 | --- | --- | --- |
-| 1 | Understand the problem and the market | Checkpoint 1 |
-| 2 | Decide what is worth doing | Gate 1 |
-| 3 | Shape the solution | Checkpoint 2 |
-| 4 | Test whether it can work | Gate 2 |
-| 5 | Outcomes (after Gate 2 is approved) | Review of the Outcome Pack |
-| 6 | Delivery material (optional, `--full`) | Review of each item |
+| 1. Product Ideation | Is there something worth pursuing? | Automated |
+| 2. Product Planning | What will we build first, and can it work? | Automated |
+| 3. Product Development | Building it | Handed over to your team, with outcomes and delivery material |
+| 4. Product Launching and Sunsetting | Releasing, running and retiring it | Not built yet |
 
-There are four working phases. After each one, work **stops** and waits for a person to decide. Nothing moves on without that decision.
+Version 1.0 does the first two stages end to end, then hands your team a clear set of **outcomes** (measurable results the product must achieve) to build from. See [The product lifecycle](lifecycle.md).
 
-## The four phases, in plain words
+## Inside the first two stages: four phases
 
-| Phase | The question it answers | What you get |
-| --- | --- | --- |
-| 1. Assess market and customers | Is there a real problem, for real people, in a market worth entering? | Problem statement, market definition, customer definition, summary of existing research |
-| 2. Define vision and strategy | What would we offer, and does the business case make sense? | Use cases, scope, vision, business model, an initial business case |
-| 3. Converge on solution | What exactly will we build first? | Prioritised capabilities, positioning, pilot plan, MVP scope |
-| 4. Evaluate viability | Can this actually work: legally, financially, practically? | Risk, pricing, measurement plan, a final business case |
+Ideation and Planning each have two phases. After each phase, work **stops** and waits for a person to decide. Nothing moves on without that decision.
 
-After phase 4 and your approval, AI-PLC can also write an **Outcome Pack** (the results the product must achieve, each with a measure) and, if you ask, **delivery material** such as requirements and user stories.
+| Stage | Phase | The question it answers | What you get |
+| --- | --- | --- | --- |
+| Ideation | 1. Assess market and customers | Is there a real problem, for real people, in a market worth entering? | Problem statement, market definition, customer definition, summary of existing research |
+| Ideation | 2. Define vision and strategy | What would we offer, and does the business case make sense? | Use cases, scope, vision, business model, an initial business case |
+| Planning | 3. Converge on solution | What exactly will we build first? | Prioritised capabilities, positioning, pilot plan, MVP scope |
+| Planning | 4. Evaluate viability | Can this actually work: legally, financially, practically? | Risk, pricing, measurement plan, a final business case |
+
+After phase 4 and your approval, AI-PLC writes an **Outcome Pack** and, if you ask, **delivery material** such as requirements and user stories, ready for the Development stage.
 
 ## Decision points
 
-There are four stops where a person must decide. Two are **checkpoints** and two are **gates**. See [Decision points](gates.md) for what each means. In short:
+There are four stops where a person must decide. Two are **checkpoints** and two are **gates**, and each gate closes a stage. See [Decision points](gates.md) for what each means. In short:
 
 - A **checkpoint** is a product decision, usually yours and your team's: "are we on the right track?"
 - A **gate** is an investment decision about the business case: "should we keep putting money and people into this?" It is usually taken by the people who fund the work, so AI-PLC prepares a short pack for you to take to them.

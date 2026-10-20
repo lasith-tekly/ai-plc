@@ -36,7 +36,7 @@ nav:
       - "7. Connectors (optional)": MCP-SETUP.md
       - Feedback: guide/feedback.md
   - Going deeper:
-      - Lifecycle: guide/lifecycle.md
+      - The product lifecycle: guide/lifecycle.md
       - Worked example: guide/worked-example.md
       - Troubleshooting: guide/troubleshooting.md
       - Glossary: guide/glossary.md

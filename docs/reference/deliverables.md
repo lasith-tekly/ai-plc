@@ -5,7 +5,7 @@
 
 Modes: **auto** the tool drafts from the conversation and research. **assist** the tool drafts but you supply inputs or evidence. **human** people outside the tool are needed; the tool gives a template and tracks status.
 
-## Phase 1: Assess market and customers
+## Phase 1: Assess market and customers (Ideation stage)
 
 | ID | Deliverable | Mode | Depends on |
 | --- | --- | --- | --- |
@@ -14,7 +14,7 @@ Modes: **auto** the tool drafts from the conversation and research. **assist** t
 | 1.3 | Customer definition | auto | 1.1 |
 | 1.4 | Existing research summary | assist | none |
 
-## Phase 2: Define vision and strategy
+## Phase 2: Define vision and strategy (Ideation stage)
 
 | ID | Deliverable | Mode | Depends on |
 | --- | --- | --- | --- |
@@ -29,7 +29,7 @@ Modes: **auto** the tool drafts from the conversation and research. **assist** t
 | 2.9 | Vision statement | auto | 1.1, 2.1 |
 | 2.10 | Initial business case (feeds gate 1) | assist | 1.2, 2.2, 2.7, 2.8, 2.9 |
 
-## Phase 3: Converge on solution
+## Phase 3: Converge on solution (Planning stage)
 
 | ID | Deliverable | Mode | Depends on |
 | --- | --- | --- | --- |
@@ -40,7 +40,7 @@ Modes: **auto** the tool drafts from the conversation and research. **assist** t
 | 3.5 | Pilot plan | assist | 3.2, 3.3 |
 | 3.6 | MVP scope | auto | 3.1, 3.3 |
 
-## Phase 4: Evaluate viability
+## Phase 4: Evaluate viability (Planning stage)
 
 | ID | Deliverable | Mode | Depends on |
 | --- | --- | --- | --- |

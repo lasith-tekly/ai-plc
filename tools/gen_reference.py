@@ -43,7 +43,7 @@ def table(items):
         t += f"| {i['id']} | {i['title']}{extra} | {i['mode']} | {dep} |\n"
     return t + "\n"
 for ph in p["phases"]:
-    s += f"## Phase {ph['id']}: {ph['name']}\n\n" + table(ph["deliverables"])
+    s += f"## Phase {ph['id']}: {ph['name']} ({ph['scope'].title()} stage)\n\n" + table(ph["deliverables"])
 s += "## Outcome Definition (after Gate 2)\n\n" + table(p["outcome_definition"]["deliverables"])
 for k,v in p["delivery"].items():
     if isinstance(v, list): s += f"## Delivery, `{k}` adapter (`--full` only)\n\n" + table(v)

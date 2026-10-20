@@ -4,6 +4,17 @@ A run mode is how far you want AI-PLC to take your idea in one go. You choose it
 
 You can always stop at a decision point and carry on later. You can also start small and run a bigger mode afterwards. Approved work is kept and never redone.
 
+## How the modes relate to the lifecycle stages
+
+| Mode | Covers |
+| --- | --- |
+| `--ideation` | Stage 1, Product Ideation |
+| `--planning` | Stages 1 and 2: Ideation, then Planning |
+| `--outcomes` | Stages 1 and 2, then the Outcome Pack for the Development stage |
+| `--full` | All of the above, then requirements and user stories (or the adapter's output) to feed Development |
+
+Stages 3 (running the build) and 4 (Launching and Sunsetting) are not run by AI-PLC. See [The product lifecycle](lifecycle.md).
+
 ## Which one do I need?
 
 | I want to... | Use | You get | It stops when |
