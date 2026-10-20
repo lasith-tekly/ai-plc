@@ -19,6 +19,8 @@ Everything is written inside a `/product` folder in your project. Nothing is wri
 
 Each deliverable file starts with frontmatter: `id`, `profile`, `status` (draft, reviewed, approved or stale), `version`, `updated`, `mode`, `depends_on` and `sources`. Status lives there and nowhere else. Open `templates/` in the source for exact shapes. See [Templates](../reference/templates.md).
 
+See a real `plan.md` and `status.md` in the [Worked example](worked-example.md).
+
 ## Resuming
 
 Run the command again. The orchestrator reads `plan.md`, `status.md` and `memory.md` and resumes. It never redoes an approved deliverable.

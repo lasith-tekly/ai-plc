@@ -37,6 +37,7 @@ nav:
       - Feedback: guide/feedback.md
   - Going deeper:
       - Lifecycle: guide/lifecycle.md
+      - Worked example: guide/worked-example.md
       - Troubleshooting: guide/troubleshooting.md
       - Glossary: guide/glossary.md
   - Customisation: customisation/index.md

@@ -10,6 +10,6 @@
 | Jira shows a reporter or priority you did not set | The tool sets these defaults. The dry run and the export log note it |
 | Confluence page is not where you expected | If the space home page is the space root, the page is placed under it |
 | AI-DLC package-card label differs from the answer to an open question | Known issue. Review it |
-| AI-DLC version looks old | Known. See [Run modes](run-modes.md) |
+| AI-DLC version differs from 2.5.67 | The adapter was tested with 2.5.67. See [Run modes](run-modes.md) |
 
 Known issues for each release are in the [release notes](https://github.com/lasith-tekly/ai-plc/blob/main/RELEASE-NOTES-v1.0.md).

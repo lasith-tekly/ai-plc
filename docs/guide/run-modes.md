@@ -44,6 +44,6 @@ The "stops when" column refers to the four decision points: two checkpoints (pro
 
 The Outcome step will not run until the final business case (Gate 2) is approved. Delivery will not run until the Outcome Pack is issued. If you ask for a mode that needs something not yet approved, AI-PLC runs up to that point and stops.
 
-## About the AI-DLC adapter and versions
+## About the AI-DLC adapter and its version
 
-In testing, the AI-DLC run in Kiro reported version 2.5.67, while the AI-DLC project listed a newer stable release. The difference is unexplained. Treat the adapter as tested only with that Kiro build, and check the version stated in the run notes.
+The AI-DLC adapter was tested with the AI-DLC version that Kiro reported, **2.5.67**. The run notes state the version that was installed in your workspace when they were written. If you use a different AI-DLC version, check that the briefs still suit it.
