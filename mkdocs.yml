@@ -8,6 +8,7 @@ theme:
   name: material
   features:
     - navigation.sections
+    - navigation.footer
     - navigation.top
     - search.suggest
     - content.code.copy
@@ -24,22 +25,19 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - User guide:
-      - Getting started:
-          - What is AI-PLC?: guide/what-is-ai-plc.md
-          - Introduction: guide/introduction.md
-          - Install: guide/install.md
-          - Your first run: guide/first-run.md
-      - Core concepts:
-          - Lifecycle: guide/lifecycle.md
-          - Choose a run mode: guide/run-modes.md
-          - Decision points: guide/gates.md
-      - Day to day:
-          - What gets written: guide/files.md
-          - Connectors (MCP): MCP-SETUP.md
-      - Help:
-          - Troubleshooting: guide/troubleshooting.md
-          - Glossary: guide/glossary.md
+  - Start here:
+      - Overview: guide/start-here.md
+      - "1. What is AI-PLC?": guide/what-is-ai-plc.md
+      - "2. Install": guide/install.md
+      - "3. Choose a run mode": guide/run-modes.md
+      - "4. Your first run": guide/first-run.md
+      - "5. Decision points": guide/gates.md
+      - "6. What gets written": guide/files.md
+      - "7. Connectors (optional)": MCP-SETUP.md
+  - Going deeper:
+      - Lifecycle: guide/lifecycle.md
+      - Troubleshooting: guide/troubleshooting.md
+      - Glossary: guide/glossary.md
   - Customisation: customisation/index.md
   - Developer reference:
       - Overview: reference/index.md
