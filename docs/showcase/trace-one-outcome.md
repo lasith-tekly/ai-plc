@@ -40,7 +40,7 @@ Each arrow can be followed in both directions, because each item names where it 
 | Outcome | Nothing | O2 (parts fit together), O9 (return use) |
 | Requirement R-O1-2 | R-O1-1 Party description (hard); R-O3-7a prices labelled as estimates (hard); R-O1-8 allowed content sources (soft) | R-O1-9 web and phone journey; R-O1-10 time-to-destination events; R-O5-12 |
 | Epic E2 | E1 Our family's data is protected (hard) | E3, E4, E5, E6 and others |
-| Story S-E2-4 | S-E2-1 tell the product who is travelling (hard); S-E2-6 estimate labels (hard); S-E2-7 allowed content (soft) | S-E2-5, S-E2-5, S-E2-8, S-E2-9, S-E5-1 |
+| Story S-E2-4 | S-E2-1 tell the product who is travelling (hard); S-E2-6 estimate labels (hard); S-E2-7 allowed content (soft) | S-E2-5, S-E4-10, S-E5-1 |
 
 So the plan says **what must be built before destination suggestions**: a way to describe the party, estimate labels on prices, and, before real families use it, data protection. And it says what suggestions unlock: comparing, the time-to-destination events that measure the outcome, and the whole-trip plan.
 
