@@ -16,7 +16,7 @@ flowchart LR
 
 1. **Inputs.** The orchestrator hands the agent only what it may use: your answers, the **approved** files it depends on, `memory.md` (what the project has learned) and any source you named. Nothing that is still a draft.
 2. **A specialist drafts it.** Each agent follows a skill, which is a written procedure for that kind of work. Where the profile says `auto`, it drafts from the conversation and research. Where it says `assist`, it drafts but needs your inputs or evidence. Where it says `human`, people outside the tool are needed, so it writes a kit and tracks status.
-3. **Every draft has the same shape.** A small header (the file's `id`, `mode`, `status`, `version`, `depends_on` and `sources`), then the content, which always separates what is **known**, what is **assumed** and what is **open**, and ends with **what the PM should check first**.
+3. **Every draft has the same shape.** A small header (the file's `id`, `mode`, `status`, `version`, `depends_on` and `sources`), then the content, which always separates what is **known**, what is **assumed** and what is **open**, and, in most deliverables (24 of 30 in the sample run), ends with **what the PM should check first**. The agent also gives that list in its summary in chat.
 4. **You review it.** You approve it or ask for changes. A change makes a new version. Only your approval moves the status to `approved`.
 5. **The files stay current.** The orchestrator regenerates `status.md`, and adds your decisions, constraints and rejected options to `memory.md`.
 6. **A different agent checks at every stop.** Before each checkpoint and gate, a new reviewer agent checks the phase's approved files. See [Decisions and reviews](decisions.md).

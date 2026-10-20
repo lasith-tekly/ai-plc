@@ -23,7 +23,7 @@ Phase 1 starts from nothing but your idea. Deliverable 1.1 is built from a short
     - **1.3 Customer definition:** Customer groups · Who benefits most, and why · Buyers and users · What we are assuming · Open questions
     - **1.4 Existing research summary:** Status of PM-supplied research · The PM's idea · Research inventory · What the evidence says · Where the evidence is thin · What is known, assumed and open · PM research that would strengthen…
 
-    Nearly every deliverable in the run ends with the same three sections: **What we are assuming**, **Open questions** and **What the PM should check first**. That is by design: a reviewer can tell at a glance what is fact and what is not.
+    Most deliverables in the run (24 of 30) end with the same sections: **What we are assuming**, **Open questions** and **What the PM should check first**. The phase 1 files, 2.7 and 4.1 keep the first two and give the check-first list in chat instead. That is by design: a reviewer can tell at a glance what is fact and what is not.
 
 ??? note "Go deeper: a real excerpt from 1.1, the problem and the opportunity"
     > **The problem.** Families planning holidays, solo leisure travellers and people on multi-city or long-haul trips have to put a trip together themselves, across many disconnected places. They research destinations online across many tabs, then book flights in one place, hotels in another, and car hire and tours somewhere else. This takes hours, and because nothing connects the pieces, the traveller carries the whole plan in their head.
