@@ -35,6 +35,15 @@ Licence: Apache 2.0.
 
 3. Run `/ai-plc --ideation "<your idea>"` and follow the stops.
 
+## Before you start, and feedback
+
+- Try it first on a test project with a dummy or low-stakes idea.
+- Do not use confidential company material, and do not connect company systems. Check your organisation's policy first.
+- Check every figure against its source. The AI can be wrong.
+- Nothing is approved until you approve it. If a tool approves something for you, that is a bug. Please report it.
+
+To give feedback, open an [issue](https://github.com/lasith-tekly/ai-plc/issues/new/choose) and choose **Feedback**. Please do not include passwords, tokens or confidential content. Step-by-step help is in the [documentation](https://lasith-tekly.github.io/ai-plc/).
+
 ## Status
 
 See `RELEASE-NOTES-v1.0.md` for exactly what has been tested in each tool and what has not.
