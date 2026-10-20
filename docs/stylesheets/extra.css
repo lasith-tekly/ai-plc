@@ -1,0 +1,30 @@
+/* Calmer, more readable layout */
+.md-grid { max-width: 70rem; }
+.md-typeset { font-size: 0.82rem; line-height: 1.7; }
+.md-typeset h1 { color: var(--md-default-fg-color); font-weight: 600; letter-spacing: -0.01em; margin-bottom: 1.2rem; }
+.md-typeset h2 { font-weight: 600; margin-top: 2.4rem; padding-bottom: 0.3rem; border-bottom: 1px solid var(--md-default-fg-color--lightest); }
+.md-typeset h3 { font-weight: 600; margin-top: 1.8rem; }
+
+/* Tables: lighter, easier to scan, scroll instead of squash */
+.md-typeset__table { width: 100%; }
+.md-typeset__table table:not([class]) { display: table; width: 100%; }
+.md-typeset table:not([class]) { font-size: 0.74rem; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 6px; box-shadow: none; }
+.md-typeset table:not([class]) th { background: var(--md-code-bg-color); font-weight: 600; white-space: nowrap; }
+.md-typeset table:not([class]) td, .md-typeset table:not([class]) th { padding: 0.6em 0.9em; vertical-align: top; }
+.md-typeset table:not([class]) tbody tr:hover { background: var(--md-code-bg-color); }
+
+/* Images and diagrams: centred, framed, with quiet captions */
+.md-typeset img { display: block; margin: 1.2rem auto 0.4rem; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 6px; max-width: 100%; height: auto; }
+.md-typeset p > em:only-child { display: block; text-align: center; font-size: 0.72rem; color: var(--md-default-fg-color--light); margin-bottom: 1.4rem; }
+.md-typeset .mermaid { text-align: center; margin: 1.2rem 0; }
+
+/* Admonitions and collapsible blocks: softer */
+.md-typeset .admonition, .md-typeset details { font-size: 0.78rem; border-radius: 6px; box-shadow: none; }
+.md-typeset details > summary { font-weight: 500; }
+
+/* Quotes read as excerpts */
+.md-typeset blockquote { border-left: 3px solid var(--md-primary-fg-color); color: var(--md-default-fg-color--light); padding: 0.2rem 1rem; }
+
+/* Navigation: lighter */
+.md-nav__title { font-weight: 600; }
+.md-nav--primary .md-nav__link { font-size: 0.72rem; }
