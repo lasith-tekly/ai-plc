@@ -16,10 +16,17 @@ theme:
 
 markdown_extensions:
   - admonition
+  - attr_list
+  - md_in_html
   - tables
   - toc:
       permalink: true
-  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
 
@@ -35,9 +42,19 @@ nav:
       - "6. What gets written": guide/files.md
       - "7. Connectors (optional)": MCP-SETUP.md
       - Feedback: guide/feedback.md
+  - What it produces:
+      - Overview: showcase/index.md
+      - How each output is built: showcase/how-built.md
+      - "Stage 1: Ideation": showcase/ideation.md
+      - "Stage 2: Planning": showcase/planning.md
+      - Decisions and reviews: showcase/decisions.md
+      - The Outcome Pack: showcase/outcome-pack.md
+      - Dependencies at every level: showcase/dependencies.md
+      - Delivery material: showcase/delivery.md
+      - Follow one outcome end to end: showcase/trace-one-outcome.md
+      - Worked example (files): guide/worked-example.md
   - Going deeper:
       - The product lifecycle: guide/lifecycle.md
-      - Worked example: guide/worked-example.md
       - Troubleshooting: guide/troubleshooting.md
       - Glossary: guide/glossary.md
   - Customisation: customisation/index.md
