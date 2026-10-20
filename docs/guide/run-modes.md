@@ -7,7 +7,7 @@ You can always stop at a decision point and carry on later. You can also start s
 ## Which one do I need?
 
 | I want to... | Use | You get | It stops when |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | Find out whether an idea is worth pursuing | `--ideation` | Problem, market, customers, use cases, vision, initial business case | The initial business case is ready for an investment decision (Gate 1) |
 | Plan the solution and test whether it can work | `--planning` | Everything above, plus the solution, MVP scope, risks, pricing and a final business case | The final business case is ready for an investment decision (Gate 2) |
 | Turn an approved plan into measurable results | `--outcomes` | Everything above, plus an Outcome Pack: each outcome with its measure, dependencies and a roadmap | The Outcome Pack is issued |
@@ -16,6 +16,8 @@ You can always stop at a decision point and carry on later. You can also start s
 Each mode includes the ones before it. For example, `--planning` does what `--ideation` does and then continues.
 
 ## How to run each one
+
+These use the `/ai-plc` form. In the Claude Code plugin it is `/ai-plc:ai-plc`, and in Codex it is `$ai-plc`. See [Install](install.md).
 
 ```
 /ai-plc --ideation "<your idea>"

@@ -7,4 +7,3 @@
 - [Build the packages](build.md)
 - [Connectors (MCP)](../MCP-SETUP.md)
 - [Test guide](../TEST-GUIDE.md)
-- [Build facts](../BUILD-FACTS.md)

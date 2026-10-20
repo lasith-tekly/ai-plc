@@ -1,6 +1,6 @@
 # Start here
 
-Follow these steps in order. Each page ends with a **Next** button that takes you to the following step. Allow about an hour for a first run on a small idea.
+Follow these steps in order. Each page ends with a **Next** button that takes you to the following step. Start with a small idea.
 
 | Step | What you do | Page |
 | --- | --- | --- |
@@ -20,7 +20,7 @@ Follow these steps in order. Each page ends with a **Next** button that takes yo
 
 ## What a run feels like
 
-1. You type one command with your idea.
+1. You type one command with your idea. The command depends on your tool: see [Install](install.md).
 2. The assistant asks a few short questions, then shows a plan and waits for you to say go.
 3. It drafts a deliverable. You read it, check the sources and approve it or ask for changes.
 4. At each decision point it prepares a short pack. You decide: approve, rework, pivot or stop.

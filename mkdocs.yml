@@ -47,5 +47,4 @@ nav:
       - Templates: reference/templates.md
       - Build the packages: reference/build.md
       - Test guide: TEST-GUIDE.md
-      - Build facts: BUILD-FACTS.md
   - Roadmap: roadmap.md

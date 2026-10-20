@@ -29,7 +29,7 @@ See `MCP-SETUP.md` in the package root for Notion, Jira and Confluence. The orch
 - Tested in Kiro: the orchestrator agent loads with the config in this package, and discovery runs as separate sub-agents (1.2 and 1.3 in parallel).
 - Check any key figure against its source link before you approve a deliverable.
 
-## What to watch for, and tell me
+## What to watch for, and tell us
 
 - Did the agents and the `/ai-plc` command show up?
 - Did the orchestrator find the profile and templates?

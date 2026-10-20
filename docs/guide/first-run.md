@@ -4,7 +4,7 @@ Use a dummy idea first. A small, low-stakes one is fine.
 
 ## 1. Start
 
-Switch to the orchestrator agent (in Kiro, `ai-plc-orchestrator`) and type:
+Open your tool in the project folder. In Kiro, switch to the `ai-plc-orchestrator` agent first. Then type the start command for your tool (see [Install](install.md)), for example:
 
 ```
 /ai-plc --ideation "a short description of your idea"

@@ -10,12 +10,14 @@ AI-PLC runs that work as one connected flow. Each piece of work is a **deliverab
 
 ## The idea in one picture
 
-```
-Idea  ->  Understand the problem  ->  Decide what is worth doing  ->  Shape the solution  ->  Test if it can work  ->  Outcomes  ->  Delivery material
-              (phase 1)                     (phase 2)                     (phase 3)               (phase 4)            (after approval)     (optional)
-                       \                          |                            |                          |
-                    decision                  decision                     decision                   decision
-```
+| Step | Phase | Then a person decides |
+| --- | --- | --- |
+| 1 | Understand the problem and the market | Checkpoint 1 |
+| 2 | Decide what is worth doing | Gate 1 |
+| 3 | Shape the solution | Checkpoint 2 |
+| 4 | Test whether it can work | Gate 2 |
+| 5 | Outcomes (after Gate 2 is approved) | Review of the Outcome Pack |
+| 6 | Delivery material (optional, `--full`) | Review of each item |
 
 There are four working phases. After each one, work **stops** and waits for a person to decide. Nothing moves on without that decision.
 
