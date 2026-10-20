@@ -1,6 +1,6 @@
 # AI-PLC: multi-tool packages (version 1.0.0-rc1)
 
-AI-PLC is an AI-native product lifecycle for product managers. A PM runs one command, the AI drafts each deliverable, and humans review and approve at every stop. These packages load the same neutral files into four tools.
+AI-PLC is an AI-native product lifecycle for product managers. A PM runs one command, the AI drafts each deliverable, and humans review and approve at every stop. AI-PLC follows a product through four stages: Product Ideation, Product Planning, Product Development, and Product Launching and Sunsetting. Version 1.0 automates the first two, then hands your team outcomes and delivery material to build from. The last stage is not built yet. These packages load the same neutral files into four tools.
 
 | Folder | Tool | What you get |
 | --- | --- | --- |

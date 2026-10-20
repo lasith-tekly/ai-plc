@@ -2,6 +2,8 @@
 
 Follow these steps in order. Each page ends with a **Next** button that takes you to the following step. Start with a small idea.
 
+AI-PLC covers the first two of the four stages of a product's life: Product Ideation and Product Planning. It then hands your team outcomes to build from. [The product lifecycle](lifecycle.md) explains the four stages.
+
 | Step | What you do | Page |
 | --- | --- | --- |
 | 1 | Understand what AI-PLC is and what it will ask of you | [What is AI-PLC?](what-is-ai-plc.md) |

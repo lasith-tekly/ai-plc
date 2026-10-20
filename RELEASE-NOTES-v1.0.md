@@ -3,6 +3,7 @@
 See "Before you start, and how to give feedback" in `README.md` inside the zip, and the "Feedback" page in the documentation.
 
 ## What is in v1.0
+- Covers the first two of the four product lifecycle stages: Product Ideation and Product Planning. It then produces outcomes and delivery material for the Development stage. Product Launching and Sunsetting is not built yet.
 - 7 specialist agents plus an orchestrator, 12 skills, one neutral profile (AI-PLC v1.0), templates.
 - Run modes: `--ideation`, `--planning`, `--outcomes`, `--full`.
 - Delivery adapters: Scrum, plain-markdown, AI-DLC.

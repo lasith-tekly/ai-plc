@@ -6,6 +6,17 @@ It is plain files (markdown skills, agent roles, a YAML profile and templates) t
 
 Licence: Apache 2.0.
 
+## The four stages of a product's life
+
+AI-PLC follows a product through four stages. Version 1.0 automates the first two, then hands your team clear outcomes to build from.
+
+| Stage | AI-PLC v1.0 |
+| --- | --- |
+| 1. Product Ideation | Automated |
+| 2. Product Planning | Automated |
+| 3. Product Development | Handed over: outcomes and delivery material for your team to build from |
+| 4. Product Launching and Sunsetting | Not built yet |
+
 ## How it works
 
 ```
