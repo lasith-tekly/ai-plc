@@ -14,7 +14,7 @@ Open your tool in the project folder. In Kiro, switch to the `ai-plc-orchestrato
 
 The orchestrator explains the mode and which stops you will meet. It asks up to four short questions at a time and says why. If you do not know an answer, say so. It is recorded as an open question.
 
-It also asks which connected sources, if any, to read. Say "none" on your first run.
+It also asks which connected sources, if any, to read. Say "none" on your first run. If you already have notes, research or company principles, see [Bring your own context](bring-context.md).
 
 ## 3. Review the plan
 

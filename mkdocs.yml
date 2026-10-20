@@ -58,6 +58,7 @@ nav:
       - "1. What is AI-PLC?": guide/what-is-ai-plc.md
       - "2. Install": guide/install.md
       - "3. Choose a run mode": guide/run-modes.md
+      - Bring your own context: guide/bring-context.md
       - "4. Your first run": guide/first-run.md
       - "5. Decision points": guide/gates.md
       - "6. What gets written": guide/files.md
