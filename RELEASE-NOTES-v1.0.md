@@ -7,7 +7,7 @@ See "Before you start, and how to give feedback" in `README.md` inside the zip, 
 - 7 specialist agents plus an orchestrator, 12 skills, one neutral profile (AI-PLC v1.0), templates.
 - Run modes: `--ideation`, `--planning`, `--outcomes`, `--full`.
 - Delivery adapters: Scrum, plain-markdown, AI-DLC.
-- Optional connectors for Notion, Jira and Confluence (read, and create after an approved dry run).
+- Optional connectors for Notion, Jira and Confluence (read, and create after an approved dry run). The connection list ships in every package. You only sign in.
 - Packages for Kiro, Claude Code (plugin and drop-in), Codex and GitHub Copilot, generated from one source.
 
 ## What has been tested

@@ -167,6 +167,29 @@ def agent_body(role, loc):
     return fm, text
 
 
+
+# ------------------------------------------------------------ MCP connectors
+# Addresses only. No keys or tokens ever ship. The PM signs in through the tool's own window.
+MCP_SERVERS = {
+    "notion": "https://mcp.notion.com/mcp",
+    "atlassian": "https://mcp.atlassian.com/v2/mcp",
+}
+
+
+def mcp_json(key, typed):
+    servers = {}
+    for name, url in MCP_SERVERS.items():
+        servers[name] = ({"type": "http", "url": url} if typed else {"url": url})
+    return json.dumps({key: servers}, indent=2) + "\n"
+
+
+def mcp_toml():
+    out = ""
+    for name, url in MCP_SERVERS.items():
+        out += f'[mcp_servers.{name}]\nurl = "{url}"\n\n'
+    return out
+
+
 # ---------------------------------------------------------------- Claude Code
 def build_claude(root, loc, plugin_prefix, plugin):
     if plugin:
@@ -199,6 +222,8 @@ def build_claude(root, loc, plugin_prefix, plugin):
     skill_files(root / "skills", loc, "claude")
     orchestrator_skill(root / "skills", loc, "claude", plugin_prefix)
     copy_shared(root / "ai-plc")
+    if plugin:
+        write(root / ".mcp.json", mcp_json("mcpServers", True))
 
 
 # -------------------------------------------------------------------- Copilot
@@ -215,6 +240,7 @@ def build_copilot(root):
     skill_files(gh / "skills", loc, "copilot")
     orchestrator_skill(gh / "skills", loc, "copilot")
     copy_shared(gh / "ai-plc")
+    write(root / ".vscode" / "mcp.json", mcp_json("servers", True))
 
 
 # ---------------------------------------------------------------------- Codex
@@ -232,6 +258,7 @@ def build_codex(root):
     skill_files(root / ".agents" / "skills", loc, "codex")
     orchestrator_skill(root / ".agents" / "skills", loc, "codex")
     copy_shared(root / ".codex" / "ai-plc")
+    write(root / ".codex" / "config.toml", mcp_toml())
 
 
 def build_kiro(root):
@@ -243,6 +270,7 @@ def build_kiro(root):
     shutil.copytree(SRC / "templates", k / "ai-plc" / "templates", dirs_exist_ok=True)
     for n in SKILLS:
         shutil.copytree(SRC / "skills" / n, k / "skills" / n, dirs_exist_ok=True)
+    write(k / "settings" / "mcp.json", mcp_json("mcpServers", False))
     shutil.copy(SRC / "build" / "kiro" / "INSTALL.md", root / "INSTALL.md")
 
 
@@ -257,6 +285,7 @@ def main():
     proj.rename(tmp)
     (OUT / "claude-code-project").mkdir()
     shutil.move(str(tmp), str(OUT / "claude-code-project" / ".claude"))
+    write(OUT / "claude-code-project" / ".mcp.json", mcp_json("mcpServers", True))
     build_copilot(OUT / "copilot")
     build_codex(OUT / "codex")
     build_kiro(OUT / "kiro")

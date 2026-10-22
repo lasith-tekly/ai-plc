@@ -14,7 +14,7 @@
 
 ## Connect your tools (optional)
 
-See `MCP-SETUP.md` in the package root for Notion, Jira and Confluence. The orchestrator agent already allows MCP tools.
+The package already lists Notion and Atlassian (Jira and Confluence) under **MCP Servers** in Kiro. Nothing is connected and nothing is signed in until you choose. To use one, click it, choose to connect and sign in in the browser window. Skip this if you do not need it. See `MCP-SETUP.md` for the safe way to try it.
 
 ## Run
 

@@ -11,7 +11,7 @@ AI-PLC is an AI-native product lifecycle for product managers. A PM runs one com
 | `kiro/.kiro` | Kiro | 8 agents (`.json`), 12 skills, the `/ai-plc` steering command. See `kiro/INSTALL.md` |
 
 
-Connecting to Notion, Jira and Confluence is optional. See `MCP-SETUP.md`.
+Notion, Jira and Confluence are already listed in your tool. Connecting is optional and needs your own sign-in. See `MCP-SETUP.md`.
 
 ## Run it
 

@@ -20,48 +20,22 @@ AI-PLC can read the sources you name at the start of a run, and send approved re
 | Google Drive, Docs, Sheets | Google's Workspace MCP servers | OAuth 2.0 with your own Google Cloud project | Developer Preview only. Optional in v1.0. Download the files instead |
 | Word and Excel | None | None | They are files. Put them in the project folder and name them in the plan |
 
-## Add the servers, by tool
+## Already set up for you
 
-Replace `notion` with `atlassian` and the address for Jira and Confluence.
+The package includes the connection list for Notion and Atlassian (Jira and Confluence), so you do not edit any files. It holds the server addresses only. It holds no password, token or key, and nothing is connected until you sign in.
 
-**Claude Code**
-```
-claude mcp add --transport http notion https://mcp.notion.com/mcp
-claude mcp add --transport http atlassian https://mcp.atlassian.com/v2/mcp
-```
-Then run `/mcp` in Claude Code and finish the sign-in.
+| Tool | Where it appears | What you do |
+| --- | --- | --- |
+| Kiro | **MCP Servers** panel | Click the server, choose to connect, sign in in the browser window |
+| Claude Code | `/mcp` | Run `/mcp`, pick the server, sign in |
+| Codex | `codex mcp login notion` or `atlassian` | Run it once and sign in |
+| GitHub Copilot in VS Code | **MCP: List Servers** in the Command Palette | Start the server and sign in |
 
-**Codex** (`~/.codex/config.toml`)
-```
-[mcp_servers.notion]
-url = "https://mcp.notion.com/mcp"
+One sign-in covers both Jira and Confluence (21 tools). The AI-PLC orchestrator already allows MCP tools. Confirmed in Kiro with Atlassian: the server shows under **MCP Servers**, and a browser window opens for the sign-in. Use a private window if you have several accounts, and allow only the site you mean to use.
 
-[mcp_servers.atlassian]
-url = "https://mcp.atlassian.com/v2/mcp"
-```
-Then run `codex mcp login notion` (and `codex mcp login atlassian`).
+If your project already has its own MCP file, merge the two instead of replacing it. The files are `.kiro/settings/mcp.json` (Kiro), `.mcp.json` (Claude Code), `.vscode/mcp.json` (Copilot) and `.codex/config.toml` (Codex). Codex reads the project file only for a project you have marked as trusted.
 
-**GitHub Copilot in VS Code** (`.vscode/mcp.json` in the project)
-```
-{
-  "servers": {
-    "notion": { "type": "http", "url": "https://mcp.notion.com/mcp" },
-    "atlassian": { "type": "http", "url": "https://mcp.atlassian.com/v2/mcp" }
-  }
-}
-```
-Then open the Command Palette, run **MCP: List Servers**, start each server and finish the sign-in.
-
-**Kiro** (`.kiro/settings/mcp.json` in the project, or `~/.kiro/settings/mcp.json` for all projects)
-```
-{
-  "mcpServers": {
-    "notion": { "url": "https://mcp.notion.com/mcp" },
-    "atlassian": { "url": "https://mcp.atlassian.com/v2/mcp" }
-  }
-}
-```
-Confirmed with Atlassian: after you save the file and reopen the project, the server shows under **MCP Servers** in Kiro. Choose to connect, and a browser window opens for the sign-in. Use a private window if you have several accounts, and allow only the site you mean to use. One sign-in covers both Jira and Confluence (21 tools). The AI-PLC orchestrator agent already allows MCP tools (`@mcp`), and it could use them without any change.
+Don't need a source? Leave it unconnected. AI-PLC carries on with the others.
 
 Keep **Autopilot off** while you try writes, so every tool prompt is shown to you. If you cannot create the file by hand, paste the content into Kiro's chat and ask it to create `.kiro/settings/mcp.json`.
 
@@ -79,6 +53,6 @@ Things the tool decides, not AI-PLC: Jira fills in the reporter and a default pr
 
 ## If it does not work
 
-- The server does not appear: restart the tool after changing the config.
+- The server does not appear: reopen the project or restart the tool. If the project already had its own MCP file, check that the AI-PLC entries were merged in.
 - Sign-in fails: check that your admin allows the connection, and that you are not signed in to a different account in the same browser. Use a private window for a personal site.
 - A tool needs credits or admin approval: report it to the PM. Do not work around it.
