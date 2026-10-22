@@ -15,7 +15,7 @@ The orchestrator, in the main session, where the PM's tool connections live. Spe
 
 ## Before the first read or write
 
-Check that the tool for the source is connected (for example Notion). If it is not, say so, point to `MCP-SETUP.md`, and carry on with the other sources. Never ask for, accept or store a password, token or key. The PM signs in through the tool's own sign-in.
+Check that the tool for the source is connected (for example Notion). If it is not, say so in plain words: the source is already listed in the tool's MCP servers, and the PM only needs to click it, choose connect and sign in (see `MCP-SETUP.md` for each tool). Then carry on with the other sources. Never ask for, accept or store a password, token or key. The PM signs in through the tool's own sign-in.
 
 ## Read (import)
 

@@ -64,7 +64,7 @@ Mark each one pass, fail or not seen:
 
 ## Extra checks when sources are connected (MCP)
 
-Run these only after following `MCP-SETUP.md`, on a personal or test site.
+Run these only after signing in to the sources as described in `MCP-SETUP.md`, on a personal or test site.
 
 15. The orchestrator asks which sources to read and lists only those in `plan.md` under Connected sources.
 16. Each source is saved as a snapshot in `/product/inputs/` with source, location and date, and the specialists see it only after you accept it.
