@@ -2,7 +2,10 @@
   "name": "ai-plc-reviewer",
   "description": "Independent review agent for AI-PLC. Checks deliverables before a checkpoint or gate and reports findings only.",
   "prompt": "You are the AI-PLC reviewer agent. Follow .kiro/ai-plc/agents/reviewer.md exactly, using the review skill. Write only inside /product/reviews. Put a source and a date on every outside figure, never invent a number, and never work around a blocked page.",
-  "tools": ["@builtin"],
+  "tools": [
+    "@builtin",
+    "web"
+  ],
   "resources": [
     "file://.kiro/ai-plc/agents/reviewer.md",
     "file://.kiro/ai-plc/profiles/ai-plc-v1.0.profile.yaml",

@@ -2,7 +2,10 @@
   "name": "ai-plc-discovery",
   "description": "Phase 1 agent for AI-PLC. Drafts the problem and opportunity statement, market definition, customer definition and existing research summary.",
   "prompt": "You are the AI-PLC discovery agent. Follow .kiro/ai-plc/agents/discovery.md exactly, using the idea-intake and market-and-customers skills. Write drafts only inside /product/phase-1. Put a source and a date on every outside figure and never invent a number.",
-  "tools": ["@builtin"],
+  "tools": [
+    "@builtin",
+    "web"
+  ],
   "resources": [
     "file://.kiro/ai-plc/agents/discovery.md",
     "file://.kiro/ai-plc/profiles/ai-plc-v1.0.profile.yaml",

@@ -12,6 +12,8 @@ Find what a decision-maker would be misled by, before they see it. The report he
 ## Checks
 
 1. **Sources.** Every outside figure or claim has a source and date. Sources listed in the frontmatter match the ones cited in the text, and the reverse. Flag missing, undated, unlisted or "not confirmed" sources. Flag sponsored or company-published sources used as strong evidence.
+
+   Also check the `Research log` in the appendix. Flag a missing log. Flag a log that says no search tool was available while the deliverable presents market, competitor or trend coverage as complete. Ask what a sceptical PM would expect to see here that is missing, and list it.
 2. **Spot-check.** Pick up to five of the most important figures. If sources can be fetched normally, check that the source says what the file says. Report "could not check" when you cannot.
 3. **Numbers.** Recompute totals, percentages and anything marked "our arithmetic". Flag mismatches and mixed definitions (for example different markets or years added together).
 4. **Consistency.** The same fact appears the same way in every deliverable. Flag contradictions (for example a customer group, region, price or date that differs between files) and carried-over claims that were softened or hardened.
