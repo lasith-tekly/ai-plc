@@ -46,11 +46,28 @@ Only the AI-PLC orchestrator uses these connections. The specialist agents read 
 
 1. At the start, say which sources to read (for example "the Confluence space AI-PLC Test and this Excel file"). The orchestrator lists them in `plan.md` under Connected sources.
 2. It saves each one as a snapshot in `/product/inputs/` with its source, location and date. You accept, trim or discard each one before the specialists see it.
-3. After a deliverable is approved, you can ask for an export. The orchestrator first writes a dry run in `/product/exports/` showing exactly what would be created in Notion, Confluence or Jira, or in a Word or Excel file.
+3. After a deliverable is approved, you can ask for an export. The orchestrator first writes a dry run in `/product/exports/` showing exactly what would be created in Notion, Confluence, Jira or Miro, or in a Word or Excel file.
 4. You approve the dry run. Only then does it write. It reads back what it created, compares it with the dry run and logs each result in `/product/exports/log.md`. It never deletes.
 5. To re-export after changes, it can update only the items it created earlier. The dry run shows the current and new text side by side, and you approve it first.
 
 Things the tool decides, not AI-PLC: Jira fills in the reporter and a default priority, and Confluence places a new page under the space home page when the home page is the space root. The dry run and the log note these.
+
+## Sending results to Confluence, Jira, Notion or Miro
+
+AI-PLC never writes to a connected tool on its own. It writes only when all of these are true:
+
+1. The deliverable is **approved**.
+2. **You ask** for the export, in plain words.
+3. The target (the space, project, page or board) is named in `plan.md` under Connected sources. If it was not named at the start, tell the orchestrator and it adds it.
+4. You have **approved a dry run**. It lists exactly what would be created. After your approval it creates only, reads back what it wrote, compares it with the dry run and logs it in `/product/exports/log.md`. It never deletes, and it never changes anything it did not create.
+
+| Where | What can go there | When it makes sense | Example request |
+| --- | --- | --- | --- |
+| Confluence or Notion | Any approved deliverable, as a page | After a gate, for that phase's files (for example 2.10 after Gate 1) | "Export 2.10 to the Confluence space X as a new page." |
+| Jira | Epics and stories, with links | After delivery, with the `scrum` adapter. The `ai-dlc` and `plain-markdown` adapters write no epics or stories | "Export the epics and stories to Jira project X." |
+| Miro | The Mermaid maps as native diagrams: outcome, requirement and story dependency maps, roadmaps, the handoff order | After the Outcome Pack is issued, or after delivery | "Export the outcome dependency map and roadmap to a new Miro board called AI-PLC test." |
+
+Large maps are split into frames so the board stays readable. Start with a test space, project or board. Jira and Confluence are tested in Kiro. Notion and Miro are written from the vendors' documentation and are not yet tested.
 
 ## If it does not work
 
