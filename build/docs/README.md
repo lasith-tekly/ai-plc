@@ -11,7 +11,7 @@ AI-PLC is an AI-native product lifecycle for product managers. A PM runs one com
 | `kiro/.kiro` | Kiro | 8 agents (`.json`), 12 skills, the `/ai-plc` steering command. See `kiro/INSTALL.md` |
 
 
-Notion, Jira and Confluence are already listed in your tool. Connecting is optional and needs your own sign-in. See `MCP-SETUP.md`.
+Notion, Jira, Confluence and Miro are already listed in your tool. Connecting is optional and needs your own sign-in. See `MCP-SETUP.md`.
 
 ## Run it
 
@@ -40,7 +40,7 @@ See `TEST-GUIDE.md` for the shared test and the pass checks.
 Please read these first.
 
 - **Try it first on a test project with a dummy or low-stakes idea.** Do not use confidential company material.
-- **Do not connect company systems.** Connecting Jira, Confluence or Notion is optional. If you try it, use a personal or sandbox site and read `MCP-SETUP.md`.
+- **Do not connect company systems.** Connecting Jira, Confluence, Notion or Miro is optional. If you try it, use a personal or sandbox site and read `MCP-SETUP.md`.
 - **Check your organisation's policy** before using any AI tool with company data.
 - **Check every figure against its source** before you rely on it. The AI can be wrong.
 - **Nothing is approved until you approve it.** If any tool approves a deliverable, checkpoint or gate for you, that is a bug. Please report it.

@@ -1,5 +1,5 @@
 ---
-target: <notion | confluence | jira | word | excel>
+target: <notion | confluence | jira | miro | word | excel>
 location: <site and space or project, or file name>
 created: <YYYY-MM-DD>
 status: draft               # draft | approved | cancelled (only the PM approves)

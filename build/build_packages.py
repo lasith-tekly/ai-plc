@@ -173,13 +173,18 @@ def agent_body(role, loc):
 MCP_SERVERS = {
     "notion": "https://mcp.notion.com/mcp",
     "atlassian": "https://mcp.atlassian.com/v2/mcp",
+    "miro": "https://mcp.miro.com/",
 }
 
+# Extra keys a vendor documents for one tool only (Miro lists an empty oauthScopes for Kiro).
+KIRO_EXTRA = {"miro": {"oauthScopes": []}}
 
-def mcp_json(key, typed):
+
+def mcp_json(key, typed, extra=None):
     servers = {}
     for name, url in MCP_SERVERS.items():
         servers[name] = ({"type": "http", "url": url} if typed else {"url": url})
+        servers[name].update((extra or {}).get(name, {}))
     return json.dumps({key: servers}, indent=2) + "\n"
 
 
@@ -270,7 +275,7 @@ def build_kiro(root):
     shutil.copytree(SRC / "templates", k / "ai-plc" / "templates", dirs_exist_ok=True)
     for n in SKILLS:
         shutil.copytree(SRC / "skills" / n, k / "skills" / n, dirs_exist_ok=True)
-    write(k / "settings" / "mcp.json", mcp_json("mcpServers", False))
+    write(k / "settings" / "mcp.json", mcp_json("mcpServers", False, KIRO_EXTRA))
     shutil.copy(SRC / "build" / "kiro" / "INSTALL.md", root / "INSTALL.md")
 
 

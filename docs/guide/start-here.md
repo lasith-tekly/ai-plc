@@ -12,7 +12,7 @@ AI-PLC covers the first two of the four stages of a product's life: Product Idea
 | 4 | Start your first run and answer the questions | [Your first run](first-run.md) |
 | 5 | Review each draft and make the decisions at the stops | [Decision points](gates.md) |
 | 6 | Find your files, stop for the day and pick up again | [What gets written](files.md) |
-| 7 | Optional: sign in to Jira, Confluence or Notion (already listed in your tool) | [Connectors](../MCP-SETUP.md) |
+| 7 | Optional: sign in to Jira, Confluence, Notion or Miro (already listed in your tool) | [Connectors](../MCP-SETUP.md) |
 
 ## Before you begin
 

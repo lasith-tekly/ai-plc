@@ -14,7 +14,7 @@
 
 ## Connect your tools (optional)
 
-The package already lists Notion and Atlassian (Jira and Confluence) under **MCP Servers** in Kiro. Nothing is connected and nothing is signed in until you choose. To use one, click it, choose to connect and sign in in the browser window. Skip this if you do not need it. See `MCP-SETUP.md` for the safe way to try it.
+The package already lists Notion, Atlassian (Jira and Confluence) and Miro under **MCP Servers** in Kiro. Nothing is connected and nothing is signed in until you choose. To use one, click it, choose to connect and sign in in the browser window. Skip this if you do not need it. See `MCP-SETUP.md` for the safe way to try it.
 
 ## Run
 

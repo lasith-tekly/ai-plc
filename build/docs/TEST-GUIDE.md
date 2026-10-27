@@ -72,7 +72,8 @@ Run these only after signing in to the sources as described in `MCP-SETUP.md`, o
 18. A Word or Excel file named in the plan is read, and the snapshot says what was not read.
 19. After approval, an export starts with a dry run in `/product/exports/`. Nothing is written until you approve it.
 20. After approval, the writes create only, match the dry run, are read back and compared, and each is logged in `/product/exports/log.md`. No credentials appear in `/product`.
-21. A re-export updates only items the log shows AI-PLC created, shows current and new text in an approved dry run, deletes nothing and logs each change as `updated`.
+21. A Miro board named in the plan is read into a snapshot that says what was not read (images, drawings). An export to Miro is a dry run first, covers diagrams only, and changes nothing already on the board.
+22. A re-export updates only items the log shows AI-PLC created, shows current and new text in an approved dry run, deletes nothing and logs each change as `updated`.
 
 ## What to send back
 

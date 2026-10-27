@@ -7,7 +7,7 @@ See "Before you start, and how to give feedback" in `README.md` inside the zip, 
 - 7 specialist agents plus an orchestrator, 12 skills, one neutral profile (AI-PLC v1.0), templates.
 - Run modes: `--ideation`, `--planning`, `--outcomes`, `--full`.
 - Delivery adapters: Scrum, plain-markdown, AI-DLC.
-- Optional connectors for Notion, Jira and Confluence (read, and create after an approved dry run). The connection list ships in every package. You only sign in.
+- Optional connectors for Notion, Jira, Confluence and Miro (read, and create after an approved dry run). The connection list ships in every package. You only sign in.
 - Packages for Kiro, Claude Code (plugin and drop-in), Codex and GitHub Copilot, generated from one source.
 
 ## What has been tested
@@ -18,7 +18,7 @@ See "Before you start, and how to give feedback" in `README.md` inside the zip, 
 | Claude Code plugin | Passes `claude plugin validate`. Run live through Checkpoint 1 on an earlier build |
 | Codex | Run live through Gate 1 on an earlier build |
 | GitHub Copilot | File formats checked against the docs. Not run. Experimental |
-| Notion connection, listing pages, updating items AI-PLC created, Word and Excel import and export | Written, not yet tested |
+| Notion and Miro connections, listing pages, updating items AI-PLC created, Word and Excel import and export | Written, not yet tested |
 | Second full run on a real idea, with a change of direction | PENDING. v1.0 is not published until it passes |
 
 ## Known issues

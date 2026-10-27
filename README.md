@@ -29,7 +29,7 @@ AI-PLC follows a product through four stages. Version 1.0 automates the first tw
 - Two checkpoints and two gates are decided by you. The orchestrator never approves.
 - Adapters for `--full`: `scrum`, `ai-dlc`, `plain-markdown`.
 - Everything is written to a `/product` folder in your project: `plan.md`, `status.md`, `memory.md` and the deliverables.
-- Optional: Notion, Jira and Confluence come listed in the package. Sign in to use them, so AI-PLC can read your sources and, after you approve a dry run, create items there. See `MCP-SETUP.md` in the release.
+- Optional: Notion, Jira, Confluence and Miro come listed in the package. Sign in to use them, so AI-PLC can read your sources and, after you approve a dry run, create items there. See `MCP-SETUP.md` in the release.
 
 ## Install
 

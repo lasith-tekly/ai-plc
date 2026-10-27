@@ -5,7 +5,7 @@
 
 | Skill | Use it when |
 | --- | --- |
-| `connectors` | Reads sources the PM names (Notion, Jira, Confluence, Word, Excel) into /product/inputs, and exports approved AI-PLC deliverables to them after a PM-approved dry run. Use when the PM names a source to read or asks to send results to a tool. |
+| `connectors` | Reads sources the PM names (Notion, Jira, Confluence, Miro, Word, Excel) into /product/inputs, and exports approved AI-PLC deliverables to them after a PM-approved dry run. Use when the PM names a source to read or asks to send results to a tool. |
 | `delivery-ai-dlc` | Prepares an issued AI-PLC Outcome Pack for AI-DLC: one handoff brief per outcome, in dependency order, plus run notes. AI-DLC writes its own requirements and stories. Use for --full runs with the ai-dlc adapter. |
 | `delivery-plain` | Produces a readable outcome list with dependencies and drops from an issued AI-PLC Outcome Pack. Use for --full runs with the plain-markdown adapter. |
 | `delivery-scrum` | Turns an issued AI-PLC Outcome Pack into requirements, epics, user stories with acceptance criteria, and requirement and story dependency maps with end-to-end traceability. Use for --full runs with the scrum adapter. |

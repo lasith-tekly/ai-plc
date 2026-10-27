@@ -1,5 +1,5 @@
 ---
-source: <notion | jira | confluence | word | excel | other>
+source: <notion | jira | confluence | miro | word | excel | other>
 location: <page or space name and link, project key, or file name>
 fetched: <YYYY-MM-DD>
 fetched_by: orchestrator

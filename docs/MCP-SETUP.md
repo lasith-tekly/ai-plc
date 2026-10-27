@@ -1,8 +1,8 @@
-# 8. Connecting AI-PLC to Notion, Jira and Confluence (MCP)
+# 8. Connecting AI-PLC to Notion, Jira, Confluence and Miro (MCP)
 
 AI-PLC can read the sources you name at the start of a run, and send approved results back after you approve a dry run. It uses MCP servers that you connect yourself. Nothing here ships with credentials.
 
-**Status.** Tested live on 2026-10-19 in Kiro with a personal Atlassian site: the Atlassian server connected through one sign-in, read a Confluence page, created Jira epics, stories and links, and created a Confluence page, all through a PM-approved dry run. Notion, and the Claude Code, Codex and Copilot snippets, are written from each vendor's documentation and are not yet tested. Treat those as "to confirm in your first test".
+**Status.** Tested live on 2026-10-19 in Kiro with a personal Atlassian site: the Atlassian server connected through one sign-in, read a Confluence page, created Jira epics, stories and links, and created a Confluence page, all through a PM-approved dry run. Notion, Miro, and the Claude Code, Codex and Copilot connections, are written from each vendor's documentation and are not yet tested. Treat those as "to confirm in your first test".
 
 ## Before you connect
 
@@ -17,21 +17,22 @@ AI-PLC can read the sources you name at the start of a run, and send approved re
 | --- | --- | --- | --- |
 | Notion | `https://mcp.notion.com/mcp` | OAuth in your tool | Read and update pages and databases you can access |
 | Jira and Confluence | `https://mcp.atlassian.com/v2/mcp` | OAuth 2.1 in your tool. A personal API token works only if your admin enables it | One server for both. Some tools use Rovo credits |
+| Miro | `https://mcp.miro.com/` | OAuth in your tool. You authorise one Miro team, and it works only on boards of that team | Read a board you name. Export diagrams (for example the dependency map or roadmap) to a new board, after a dry run. Tables and documents are not assumed. Your admin may need to approve the app |
 | Google Drive, Docs, Sheets | Google's Workspace MCP servers | OAuth 2.0 with your own Google Cloud project | Developer Preview only. Optional in v1.0. Download the files instead |
 | Word and Excel | None | None | They are files. Put them in the project folder and name them in the plan |
 
 ## Already set up for you
 
-The package includes the connection list for Notion and Atlassian (Jira and Confluence), so you do not edit any files. It holds the server addresses only. It holds no password, token or key, and nothing is connected until you sign in.
+The package includes the connection list for Notion, Atlassian (Jira and Confluence) and Miro, so you do not edit any files. It holds the server addresses only. It holds no password, token or key, and nothing is connected until you sign in.
 
 | Tool | Where it appears | What you do |
 | --- | --- | --- |
 | Kiro | **MCP Servers** panel | Click the server, choose to connect, sign in in the browser window |
 | Claude Code | `/mcp` | Run `/mcp`, pick the server, sign in |
-| Codex | `codex mcp login notion` or `atlassian` | Run it once and sign in |
+| Codex | `codex mcp login notion` or `atlassian` | Run it once and sign in (also `miro`) |
 | GitHub Copilot in VS Code | **MCP: List Servers** in the Command Palette | Start the server and sign in |
 
-One sign-in covers both Jira and Confluence (21 tools). The AI-PLC orchestrator already allows MCP tools. Confirmed in Kiro with Atlassian: the server shows under **MCP Servers**, and a browser window opens for the sign-in. Use a private window if you have several accounts, and allow only the site you mean to use.
+One sign-in covers both Jira and Confluence (21 tools). The AI-PLC orchestrator already allows MCP tools. Confirmed in Kiro with Atlassian: the server shows under **MCP Servers**, and a browser window opens for the sign-in. Use a private window if you have several accounts, and allow only the site you mean to use. For Miro, choose the one team whose boards you mean to use, and start with a test board.
 
 If your project already has its own MCP file, merge the two instead of replacing it. The files are `.kiro/settings/mcp.json` (Kiro), `.mcp.json` (Claude Code), `.vscode/mcp.json` (Copilot) and `.codex/config.toml` (Codex). Codex reads the project file only for a project you have marked as trusted.
 

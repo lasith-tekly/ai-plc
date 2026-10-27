@@ -21,7 +21,7 @@ See [The product lifecycle](guide/lifecycle.md).
 
 - New here? Follow [Start here](guide/start-here.md): eight short steps from "what is this" to your first run.
 - Want to know what it covers? See [The product lifecycle](guide/lifecycle.md) and [Deliverables](reference/deliverables.md).
-- Connecting Jira, Confluence or Notion? See [Connectors](MCP-SETUP.md).
+- Connecting Jira, Confluence, Notion or Miro? See [Connectors](MCP-SETUP.md).
 
 ## Which tools work today
 

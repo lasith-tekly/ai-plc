@@ -6,7 +6,7 @@ Feedback from product managers who use AI-PLC is the most useful thing you can g
 
 - Try it first on a **test project** with a **dummy or low-stakes idea**.
 - Do **not** use confidential company material, and do not connect company systems. Check your organisation's policy first.
-- Connecting Jira, Confluence or Notion is optional. If you try it, use a personal or sandbox site. See [Connectors](../MCP-SETUP.md).
+- Connecting Jira, Confluence, Notion or Miro is optional. If you try it, use a personal or sandbox site. See [Connectors](../MCP-SETUP.md).
 - Check every figure against its source. The AI can be wrong.
 
 ## A good first try
