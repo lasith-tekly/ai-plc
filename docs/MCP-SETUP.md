@@ -17,7 +17,7 @@ AI-PLC can read the sources you name at the start of a run, and send approved re
 | --- | --- | --- | --- |
 | Notion | `https://mcp.notion.com/mcp` | OAuth in your tool | Read and update pages and databases you can access |
 | Jira and Confluence | `https://mcp.atlassian.com/v2/mcp` | OAuth 2.1 in your tool. A personal API token works only if your admin enables it | One server for both. Some tools use Rovo credits |
-| Miro | `https://mcp.miro.com/` | OAuth in your tool. You authorise one Miro team, and it works only on boards of that team | Read a board you name. Export diagrams (for example the dependency map or roadmap) to a new board, after a dry run. Tables and documents are not assumed. Your admin may need to approve the app |
+| Miro | `https://mcp.miro.com/` | OAuth in your tool. You authorise one Miro team, and it works only on boards of that team | Read a board you name. After a dry run, export the dependency maps, the roadmap and the handoff order as native diagrams on a new board. Create only: it never changes or deletes what is already on a board. Your admin may need to approve the app |
 | Google Drive, Docs, Sheets | Google's Workspace MCP servers | OAuth 2.0 with your own Google Cloud project | Developer Preview only. Optional in v1.0. Download the files instead |
 | Word and Excel | None | None | They are files. Put them in the project folder and name them in the plan |
 

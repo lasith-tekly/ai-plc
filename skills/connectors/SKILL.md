@@ -53,7 +53,7 @@ A PM re-exports after the deliverables change. An update is allowed only for an 
 3. Only the PM approves it. After approval, change only the listed items. Never delete, and never touch an item AI-PLC did not create.
 4. Read back, compare, and add a line to the log marked `updated`.
 
-A Miro export is for diagrams only (for example the dependency map, the roadmap or the business model canvas), put on a new board or a new frame the PM names. The dry run lists the titles, shapes and connections. Check what the Miro tool can create and say what it cannot. Do not assume it can make tables or documents. Never change or delete anything already on a board.
+A Miro export puts what AI-PLC already wrote onto a new board or a new frame the PM names. Diagrams: take the Mermaid flowchart from the deliverable and create it as a native Miro diagram (the dependency maps, the roadmap and the handoff order are all Mermaid flowcharts). Large maps: split by outcome, epic or drop, one frame each, so the board stays readable, and say how it was split. Tables and documents: use the Miro tool for them only if it offers one, and say if it does not. The dry run lists each frame, its title, the diagram or table source file and the counts of nodes and links. After the writes, read the board back and check the node and link counts against the dry run. Create only. Never use a tool that updates or deletes board items (for example `canvas_update_from_svg`), and never change anything already on a board. If a map is too large for one call, say so and propose a split. Do not retry in a loop.
 
 Word and Excel exports are local files under `/product/exports/`. The dry run lists the file name and its structure.
 
