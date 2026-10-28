@@ -72,5 +72,6 @@ Large maps are split into frames so the board stays readable. Start with a test 
 ## If it does not work
 
 - The server does not appear: reopen the project or restart the tool. If the project already had its own MCP file, check that the AI-PLC entries were merged in.
+- The sign-in page says "Access to this domain is restricted": your organisation's admin blocks the tool's sign-in address. AI-PLC is only files, and the tool is what connects, so there is nothing in AI-PLC to approve. Do not work around it. Ask your admin or security team, or try a personal or sandbox site.
 - Sign-in fails: check that your admin allows the connection, and that you are not signed in to a different account in the same browser. Use a private window for a personal site.
 - A tool needs credits or admin approval: report it to the PM. Do not work around it.
