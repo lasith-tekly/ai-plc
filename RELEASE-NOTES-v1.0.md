@@ -1,4 +1,4 @@
-# AI-PLC v1.0.0-rc1
+# AI-PLC v1.0.0-rc2
 
 See "Before you start, and how to give feedback" in `README.md` inside the zip, and the "Feedback" page in the documentation.
 

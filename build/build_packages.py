@@ -18,7 +18,7 @@ from pathlib import Path
 
 SRC = Path(__file__).resolve().parent.parent
 OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else SRC.parent / "dist"
-VERSION = "1.0.0-rc1"
+VERSION = "1.0.0-rc2"
 PREFIX = "ai-plc-"
 
 ROLES = ["discovery", "strategy", "solution", "viability", "reviewer", "outcome", "delivery"]
