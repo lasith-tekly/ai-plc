@@ -32,4 +32,4 @@ See [The product lifecycle](guide/lifecycle.md).
 | Codex | Run live through Gate 1 on an earlier build |
 | GitHub Copilot | Formats checked against its documentation. Not run. Experimental |
 
-Not yet tested: the Notion connection, updating items AI-PLC created earlier, and Word and Excel import and export. The exact list is in the [release notes](https://github.com/lasith-tekly/ai-plc/blob/main/RELEASE-NOTES-v1.0.md).
+Not yet tested: the Notion and Miro connections, updating items AI-PLC created earlier, and Word and Excel import and export. The exact list is in the [release notes](https://github.com/lasith-tekly/ai-plc/blob/main/RELEASE-NOTES-v1.0.md).
