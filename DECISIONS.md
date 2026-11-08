@@ -83,3 +83,13 @@
 - Findings turned into rules: read back after every write and compare with the dry run; note tool defaults in the dry run and the log; keep Autopilot off for write tests.
 - New rule (update): a re-export may update only items that `/product/exports/log.md` shows AI-PLC created, after reading the current content, with current and new text side by side in a PM-approved dry run. Never delete. Never touch other items. Untested.
 - Still untested: Notion, Claude Code, Codex and Copilot connection snippets; listing pages in a space; the update rule; Word and Excel import and export.
+
+## 2026-10-27: Miro added, research agents given a web tool
+- Miro is added to the connectors (OAuth, `https://mcp.miro.com/`). Mermaid maps are exported as native Miro diagrams on a new board or frame, split by frames when large. Create only: the update and delete tools are never used. Untested.
+- Cause of a missed-competitor finding in a live run: the Kiro discovery agent had only `web_fetch`, not search. Fix: the `web` tool tag on the discovery, strategy, solution, viability and reviewer agents. If a retest shows only `web_fetch`, list `remote_web_search` by name.
+- Research agents now keep a research log (tools they had, searches run, pages fetched and failed) and say in the first line of the summary if they had no search tool. The reviewer checks the log and asks what a sceptical PM would expect to see.
+
+## 2026-11-08: Release candidate 2
+- Version 1.0.0-rc2 replaces rc1. The rc1 tag was not moved: a published tag stays as it was, and the refreshed packages ship under a new tag.
+- Version 1.0.0 is published only after the second full run on a real idea, with a change of direction, passes.
+- Mappings between AI-PLC stops and any organisation's own lifecycle gates are kept private by that organisation. They are not part of this repository or its documentation.
