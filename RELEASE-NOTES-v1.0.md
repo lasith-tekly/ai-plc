@@ -19,7 +19,8 @@ See "Before you start, and how to give feedback" in `README.md` inside the zip, 
 | Claude Code plugin | Passes `claude plugin validate`. Run live through Checkpoint 1 on an earlier build |
 | Codex | Run live through Gate 1 on an earlier build |
 | GitHub Copilot | File formats checked against the docs. Not run. Experimental |
-| Notion and Miro connections, listing pages, updating items AI-PLC created, Word and Excel import and export | Written, not yet tested |
+| Miro in Kiro: connect, create the Mermaid maps as diagrams on a board | Passed on a test board. Reading an existing board not yet confirmed |
+| Notion connection, listing pages, updating items AI-PLC created, Word and Excel import and export | Written, not yet tested |
 | Second full run on a real idea, with a change of direction | PENDING. v1.0 is not published until it passes |
 
 ## Known issues

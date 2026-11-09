@@ -2,7 +2,7 @@
 
 AI-PLC can read the sources you name at the start of a run, and send approved results back after you approve a dry run. It uses MCP servers that you connect yourself. Nothing here ships with credentials.
 
-**Status.** Tested live on 2026-10-19 in Kiro with a personal Atlassian site: the Atlassian server connected through one sign-in, read a Confluence page, created Jira epics, stories and links, and created a Confluence page, all through a PM-approved dry run. Notion, Miro, and the Claude Code, Codex and Copilot connections, are written from each vendor's documentation and are not yet tested. Treat those as "to confirm in your first test".
+**Status.** Tested live on 2026-10-19 in Kiro with a personal Atlassian site: the Atlassian server connected through one sign-in, read a Confluence page, created Jira epics, stories and links, and created a Confluence page, all through a PM-approved dry run. Miro was also tested: the server connected and the Mermaid maps were created as diagrams on a Miro board (reading an existing board is not yet confirmed). Notion, and the Claude Code, Codex and Copilot connections, are written from each vendor's documentation and are not yet tested. Treat those as "to confirm in your first test".
 
 ## Before you connect
 
@@ -67,7 +67,7 @@ AI-PLC never writes to a connected tool on its own. It writes only when all of t
 | Jira | Epics and stories, with links | After delivery, with the `scrum` adapter. The `ai-dlc` and `plain-markdown` adapters write no epics or stories | "Export the epics and stories to Jira project X." |
 | Miro | The Mermaid maps as native diagrams: outcome, requirement and story dependency maps, roadmaps, the handoff order | After the Outcome Pack is issued, or after delivery | "Export the outcome dependency map and roadmap to a new Miro board called AI-PLC test." |
 
-Large maps are split into frames so the board stays readable. Start with a test space, project or board. Jira and Confluence are tested in Kiro. Notion and Miro are written from the vendors' documentation and are not yet tested.
+Large maps are split into frames so the board stays readable. Start with a test space, project or board. Jira and Confluence are tested in Kiro. Miro is tested for connecting and creating diagrams from the maps; reading an existing board is not yet confirmed. Notion is written from the vendor's documentation and is not yet tested.
 
 ## If it does not work
 
