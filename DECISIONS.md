@@ -92,7 +92,7 @@
 ## 2026-11-08: Release candidate 2
 - Version 1.0.0-rc2 replaces rc1. The rc1 tag was not moved: a published tag stays as it was, and the refreshed packages ship under a new tag.
 - Version 1.0.0 is published only after the second full run on a real idea, with a change of direction, passes.
-- Mappings between AI-PLC stops and any organisation's own lifecycle gates are kept private by that organisation. They are not part of this repository or its documentation.
+- Only the neutral AI-PLC v1.0 profile is published. Anyone adapting AI-PLC to their own process keeps their own version.
 
 ## 2026-11-09: Miro tested
 
