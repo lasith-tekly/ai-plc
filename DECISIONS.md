@@ -102,3 +102,4 @@
 
 - `install.sh` added (Mac and Linux). It takes the tool name, downloads the newest release zip (release candidates included), and copies that tool's folders into the project. It never overwrites an existing file unless `--force`, and has `--dry-run`. Windows keeps the manual steps for now.
 - Claude Code marketplace entry and a Kiro power are planned. The Agent Plugins standard (v1.0.0) covers skills and MCP only, so a Kiro power must be tested for the agent files before it is promised.
+- 2026-11-13: `install.ps1` added for Windows PowerShell (same behaviour as `install.sh`). Written and reviewed, not yet run on Windows (no PowerShell was available to test). Listed as untested in the README and install guide until someone confirms it.
