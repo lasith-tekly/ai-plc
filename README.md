@@ -6,6 +6,35 @@ It is plain files (markdown skills, agent roles, a YAML profile and templates) t
 
 Licence: Apache 2.0.
 
+## See what it produces
+
+This is one complete run on a dummy idea (an AI-assisted leisure travel platform). The web research is real and carries its source and date. The targets are synthetic placeholders, not evidence.
+
+```mermaid
+flowchart TB
+  idea(["Your idea, one command"])
+  subgraph S1["Stage 1: Product Ideation"]
+    direction LR
+    p1["Phase 1<br/>Assess market<br/>and customers"] --> cp1{"Checkpoint 1"} --> p2["Phase 2<br/>Define vision<br/>and strategy"] --> g1{"Gate 1"}
+  end
+  subgraph S2["Stage 2: Product Planning"]
+    direction LR
+    p3["Phase 3<br/>Converge<br/>on solution"] --> cp2{"Checkpoint 2"} --> p4["Phase 4<br/>Evaluate<br/>viability"] --> g2{"Gate 2"}
+  end
+  subgraph H["Handover"]
+    direction LR
+    op["Outcome Pack<br/>measurable results"] --> dl["Delivery material<br/>requirements, epics, stories<br/>or AI-DLC briefs"]
+  end
+  dev["Stage 3: Product Development<br/>your team builds"]
+  idea --> S1 --> S2 --> H --> dev
+  classDef stop fill:#e2e8f0,stroke:#334155,color:#0f172a;
+  class cp1,g1,cp2,g2 stop;
+```
+
+- [The run in one page](https://lasith-tekly.github.io/ai-plc/showcase/) and what each stage produces
+- [Follow one outcome](https://lasith-tekly.github.io/ai-plc/showcase/trace-one-outcome/) from idea to user story
+- [The Outcome Pack](https://lasith-tekly.github.io/ai-plc/showcase/outcome-pack/): the measurable results your delivery team builds from
+
 ## The four stages of a product's life
 
 AI-PLC follows a product through four stages. Version 1.0 automates the first two, then hands your team clear outcomes to build from.

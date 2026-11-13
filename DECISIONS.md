@@ -117,3 +117,7 @@
 
 - A Kiro power (Agent Plugins format) holds skills and connections but not custom agents. AI-PLC needs its agents, in particular the independent reviewer, so a full power is not possible without losing a core safety rule. A small "AI-PLC Setup" power is in `powers/ai-plc`: one skill that previews and runs the installer after approval. Untested in Kiro. To list it in Kiro's Available list the project owner submits the repository through Kiro's form; the outcome is Kiro's decision.
 - 2026-11-13: The Kiro power was tested by the project owner and worked. Author name on the plugin, power and marketplace changed to the maintainer's name. The install guide was split into one page per tool, with shared pages for the one-command and manual install.
+
+## 2026-11-13: Release candidate 3
+
+- Version 1.0.0-rc3 adds the one-command install, the Kiro power, the Claude Code marketplace, the split install guide and the Miro test result. A new tag is used, as for rc2. The install scripts' fallback tag moves to rc3 after the release is published.

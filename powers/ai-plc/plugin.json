@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ai-plc",
-  "version": "1.0.0-rc2",
+  "version": "1.0.0-rc3",
   "description": "Set up AI-PLC in a Kiro project. AI-PLC is an open-source agent harness for product ideation and planning, led by the product manager, with human approval at every stop.",
   "author": {
     "name": "Lasith Jayarathne"

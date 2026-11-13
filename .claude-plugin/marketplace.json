@@ -9,7 +9,7 @@
       "name": "ai-plc",
       "source": "./plugins/ai-plc",
       "description": "AI-native product lifecycle for product managers: ideation, planning, outcomes and delivery with human review stops.",
-      "version": "1.0.0-rc2"
+      "version": "1.0.0-rc3"
     }
   ]
 }

@@ -17,7 +17,7 @@ body:
     id: version
     attributes:
       label: Tool and AI-PLC version
-      placeholder: "e.g. Kiro 0.x, AI-PLC 1.0.0-rc2"
+      placeholder: "e.g. Kiro 0.x, AI-PLC 1.0.0-rc3"
   - type: input
     id: command
     attributes:

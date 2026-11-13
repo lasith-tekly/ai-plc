@@ -1,6 +1,14 @@
-# AI-PLC v1.0.0-rc2
+# AI-PLC v1.0.0-rc3
 
 See "Before you start, and how to give feedback" in `README.md` inside the zip, and the "Feedback" page in the documentation.
+
+## New in rc3
+- **Easier install.** One command for Kiro, Claude Code, Codex and GitHub Copilot (`install.sh` on Mac and Linux; `install.ps1` on Windows, not yet tested on Windows). It previews first and never overwrites a file you already have.
+- **Kiro power.** Import the AI-PLC power from GitHub inside Kiro, then ask Kiro to "set up AI-PLC".
+- **Claude Code marketplace.** Install the plugin with `claude plugin marketplace add lasith-tekly/ai-plc` and `claude plugin install ai-plc@ai-plc`.
+- **Install guide split by tool**, with a manual route for anyone who does not use a terminal.
+- **Miro tested** for connecting and creating diagrams from the Mermaid maps.
+- Packages carry the maintainer name as author.
 
 ## What is in v1.0
 - Covers the first two of the four product lifecycle stages: Product Ideation and Product Planning. It then produces outcomes and delivery material for the Development stage. Product Launching and Sunsetting is not built yet.
