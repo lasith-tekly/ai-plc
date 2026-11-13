@@ -136,13 +136,13 @@ Some tools have an **Autopilot** setting that lets the AI make changes without a
 
 You type this in the chat. It is the same idea everywhere, with a small difference in the first characters:
 
-| Tool | Status | Start command |
-| --- | --- | --- |
-| Kiro | Tested | `/ai-plc` |
-| Claude Code, drop-in | Run to Checkpoint 1 on an earlier build | `/ai-plc` |
-| Claude Code, plugin | Run to Checkpoint 1 on an earlier build | `/ai-plc:ai-plc` |
-| Codex | Run to Gate 1 on an earlier build | `$ai-plc` |
-| GitHub Copilot | Not run. Experimental | `/ai-plc` |
+| Tool | Start command |
+| --- | --- |
+| Kiro | `/ai-plc` |
+| Claude Code, drop-in | `/ai-plc` |
+| Claude Code, plugin | `/ai-plc:ai-plc` |
+| Codex | `$ai-plc` |
+| GitHub Copilot | `/ai-plc` |
 
 Everywhere else in this guide the command is written as `/ai-plc`. Use the one for your tool.
 
