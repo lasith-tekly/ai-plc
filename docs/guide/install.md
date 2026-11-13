@@ -14,23 +14,73 @@ This page takes you from the download to a project that is ready for your first 
 
 A **project folder** is just a normal folder on your computer where AI-PLC will keep your work. Make a new one, for example `my-first-ai-plc-run` in your Documents folder. Keep it empty for now. Use a new folder for each idea.
 
-## Faster: one command
+## Faster: one command (skips steps 2 and 3)
 
-If you are comfortable opening a terminal, you can skip steps 2 and 3. On Mac or Linux, open a terminal in your project folder and run the line for your tool. It downloads the newest release and copies the right files in. It never overwrites a file you already have.
+Instead of downloading, unzipping and copying by hand, you can paste one line into the Terminal. It downloads the newest release and copies the right files into your project folder. It never overwrites a file you already have, and it never asks for your password. If anything asks for a password, stop and close the window.
 
-```
-curl -fsSL https://raw.githubusercontent.com/lasith-tekly/ai-plc/main/install.sh | sh -s -- kiro
-```
+If you would rather read it before you run it, the script is on [GitHub](https://github.com/lasith-tekly/ai-plc/blob/main/install.sh) and is short.
 
-Use `claude-code`, `codex` or `copilot` in place of `kiro` for those tools. To see what would be copied without changing anything, add `--dry-run`. You can read the script first on [GitHub](https://github.com/lasith-tekly/ai-plc/blob/main/install.sh). 
+### On a Mac
 
-**On Windows**, open PowerShell in your project folder and run the line for your tool. This route has not been tested on Windows yet, so if it fails, follow steps 2 and 3 below and tell us what happened.
+1. **Open the Terminal.** Press **Command + Space**, type `Terminal`, and press **Enter**. A window with a blinking cursor opens. This is where you type or paste commands.
+2. **Go to your project folder.** If you made the folder in step 1 (for example `my-first-ai-plc-run` in Documents), type this and press **Enter**:
 
-```
-& ([scriptblock]::Create((irm https://raw.githubusercontent.com/lasith-tekly/ai-plc/main/install.ps1))) kiro
-```
+    ```
+    cd ~/Documents/my-first-ai-plc-run
+    ```
 
-Use `claude-code`, `codex` or `copilot` in place of `kiro`. Add `-DryRun` to see what would be copied without changing anything.
+    No folder yet? This makes one and goes into it:
+
+    ```
+    mkdir -p ~/Documents/my-first-ai-plc-run && cd ~/Documents/my-first-ai-plc-run
+    ```
+
+    A folder somewhere else? Type `cd` and a space, then drag the folder from Finder into the Terminal window, and press **Enter**.
+3. **Preview first (optional).** This shows what would be copied and changes nothing. Paste it and press **Enter**:
+
+    ```
+    curl -fsSL https://raw.githubusercontent.com/lasith-tekly/ai-plc/main/install.sh | sh -s -- kiro --dry-run
+    ```
+
+4. **Install.** Paste this and press **Enter**:
+
+    ```
+    curl -fsSL https://raw.githubusercontent.com/lasith-tekly/ai-plc/main/install.sh | sh -s -- kiro
+    ```
+
+    Replace `kiro` with `claude-code`, `codex` or `copilot` if you use one of those tools. It prints which version it downloads, then a line like `Done: 38 file(s) copied, 0 kept.`
+5. **Check the files are there.** Type `ls -a` and press **Enter**. You should see `.kiro` (or `.claude`, `.codex` and `.agents`, or `.github`, for the other tools). In Finder, press **Command + Shift + .** to show hidden files.
+
+Then carry on at [step 4](#step-4-open-the-project-in-your-tool).
+
+### On Windows
+
+This route has not been tested on Windows yet. If it fails, use steps 2 and 3 below and tell us what happened.
+
+1. **Open PowerShell.** Click the Start menu, type `PowerShell`, and press **Enter**.
+2. **Go to your project folder.** This makes one in Documents and goes into it:
+
+    ```
+    mkdir $HOME\Documents\my-first-ai-plc-run; cd $HOME\Documents\my-first-ai-plc-run
+    ```
+
+3. **Install.** Paste this and press **Enter**:
+
+    ```
+    & ([scriptblock]::Create((irm https://raw.githubusercontent.com/lasith-tekly/ai-plc/main/install.ps1))) kiro
+    ```
+
+    Replace `kiro` with `claude-code`, `codex` or `copilot` if you use one of those tools. Add `-DryRun` at the end to preview without changing anything.
+4. **Check the files are there.** Type `dir -Force` and press **Enter**. You should see `.kiro` (or the folders for your tool).
+
+### If something goes wrong
+
+| What you see | What to do |
+| --- | --- |
+| `download failed` | Check your internet connection. On a work network, a firewall may block the download. Use steps 2 and 3 below instead |
+| `command not found: curl` | Use steps 2 and 3 below |
+| `kept (already exists)` | The folder already had that file, so it was left alone. This is safe. To replace it, add `--force` on a Mac (`-Force` on Windows) |
+| Nothing seems to happen | Wait a few seconds. The download can take a moment |
 
 ## Step 2: unzip the download
 
