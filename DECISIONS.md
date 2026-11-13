@@ -112,3 +112,7 @@
 ## 2026-11-13: Order after v1.0
 
 - Agreed order: real users, easier adoption, close the loop on outcomes, then Stage 4. Working aim: a widely used open-source tool for PMs. Stage 4 waits until Stages 1 and 2 are in real use.
+
+## 2026-11-13: Kiro power
+
+- A Kiro power (Agent Plugins format) holds skills and connections but not custom agents. AI-PLC needs its agents, in particular the independent reviewer, so a full power is not possible without losing a core safety rule. A small "AI-PLC Setup" power is in `powers/ai-plc`: one skill that previews and runs the installer after approval. Untested in Kiro. To list it in Kiro's Available list the project owner submits the repository through Kiro's form; the outcome is Kiro's decision.
