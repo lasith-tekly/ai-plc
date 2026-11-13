@@ -51,6 +51,12 @@ If you would rather read it before you run it, the script is on [GitHub](https:/
     Replace `kiro` with `claude-code`, `codex` or `copilot` if you use one of those tools. It prints which version it downloads, then a line like `Done: 38 file(s) copied, 0 kept.`
 5. **Check the files are there.** Type `ls -a` and press **Enter**. You should see `.kiro` (or `.claude`, `.codex` and `.agents`, or `.github`, for the other tools). In Finder, press **Command + Shift + .** to show hidden files.
 
+!!! tip "Tested in Kiro's own terminal"
+    You can also run the command in the terminal built into Kiro (and in the terminals of the other tools). Open your project folder in Kiro, open its terminal, and paste the command there. This was tested on a Mac in Kiro and worked, so you can skip the separate Terminal app.
+
+!!! warning "Restart or reload if the tool does not see the files"
+    Tools read their files when a project opens. If the project was already open when you ran the command, close and reopen the project. If AI-PLC or its connections still do not show, quit the tool completely and open it again. The new agents appear after the tool has re-read the folder.
+
 Then carry on at [step 4](#step-4-open-the-project-in-your-tool).
 
 ### On Windows
@@ -112,7 +118,7 @@ The Claude Code plugin works differently: it is loaded with a command rather tha
 
 ## Step 4: open the project in your tool
 
-Open your tool, then open your project folder in it (usually **File**, then **Open Folder**). If the project was already open when you copied the files, close it and open it again so the tool notices them.
+Open your tool, then open your project folder in it (usually **File**, then **Open Folder**). If the project was already open when you copied the files, or when you ran the one-command install, close it and open it again so the tool notices them. If the agents or connections still do not show, quit the tool completely and open it again.
 
 ## Step 5: check that it loaded
 

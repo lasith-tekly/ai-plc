@@ -16,6 +16,8 @@ See "Before you start, and how to give feedback" in `README.md` inside the zip, 
 | --- | --- |
 | Kiro, phases 1 to 4, Outcome Pack, three adapters (Scrum, plain-markdown, AI-DLC) | Run on a dummy idea. All pass, with known issues below |
 | Atlassian (Jira and Confluence) in Kiro: connect, read, create items, create a page | Passed on a personal test site |
+| One-command install (`install.sh`) in Kiro's built-in terminal on a Mac | Passed. Files copied, project opened in Kiro |
+| One-command install on Windows (`install.ps1`), and in Claude Code, Codex and Copilot | Written, not yet tested in the tool. Copying is tested for all four tools |
 | Claude Code plugin | Passes `claude plugin validate`. Run live through Checkpoint 1 on an earlier build |
 | Codex | Run live through Gate 1 on an earlier build |
 | GitHub Copilot | File formats checked against the docs. Not run. Experimental |

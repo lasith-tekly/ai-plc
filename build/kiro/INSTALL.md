@@ -4,7 +4,9 @@
 
 1. Open (or create) the project folder where you want to run AI-PLC.
 2. Copy the `.kiro` folder from this package into the project root. If the project already has a `.kiro` folder, merge them. Nothing here overwrites Kiro's own files.
-3. Reopen the project in Kiro so it loads the new agents and skills.
+3. Reopen the project in Kiro so it loads the new agents and skills. If they do not show, quit Kiro completely and open it again.
+
+Shortcut: in Kiro's built-in terminal, in your project folder, you can run `curl -fsSL https://raw.githubusercontent.com/lasith-tekly/ai-plc/main/install.sh | sh -s -- kiro` (Mac and Linux) instead of copying the files by hand. Then reopen the project as above.
 
 ## Check it loaded
 

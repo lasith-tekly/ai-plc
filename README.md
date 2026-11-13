@@ -39,7 +39,7 @@ AI-PLC follows a product through four stages. Version 1.0 automates the first tw
 curl -fsSL https://raw.githubusercontent.com/lasith-tekly/ai-plc/main/install.sh | sh -s -- kiro
 ```
 
-Use `claude-code`, `codex` or `copilot` in place of `kiro` for those tools. To read the script first, open [`install.sh`](install.sh), or add `--dry-run` to see what would be copied. 
+Use `claude-code`, `codex` or `copilot` in place of `kiro` for those tools. You can run it in your tool's built-in terminal (tested in Kiro on a Mac). Afterwards, close and reopen the project so the tool loads the new files, and quit and reopen the tool if they still do not show. To read the script first, open [`install.sh`](install.sh), or add `--dry-run` to see what would be copied. 
 
 **One command (Windows, PowerShell).** Not yet tested on Windows, so please tell us if it fails; the manual steps below always work. In your project folder, in PowerShell:
 

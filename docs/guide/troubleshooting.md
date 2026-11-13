@@ -3,7 +3,7 @@
 | Problem | What to try |
 | --- | --- |
 | I cannot see the `.kiro`, `.claude`, `.codex`, `.agents` or `.github` folder | Names starting with a dot are hidden. On a Mac press Command + Shift + . in Finder. On Windows choose View, Show, Hidden items. See [Install](install.md) |
-| Agents or `/ai-plc` do not show up | Check the folder is directly inside your project folder (not inside another folder), then close and reopen the project |
+| Agents or `/ai-plc` do not show up | Check the folder is directly inside your project folder (not inside another folder), then close and reopen the project. If they still do not show, quit the tool completely and open it again |
 | Orchestrator does not find the profile or templates | Confirm the whole package folder was copied, not part of it |
 | A source page could not be read | The research agents never work around blocked pages. It is recorded as "not confirmed". Download the file and name it in the plan |
 | Connected tool will not sign in | See [Connectors](../MCP-SETUP.md). Use a private browser window if you have several accounts |
