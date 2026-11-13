@@ -33,6 +33,16 @@ AI-PLC follows a product through four stages. Version 1.0 automates the first tw
 
 ## Install
 
+**One command (Mac and Linux).** In your project folder, in a terminal, run the line for your tool. It downloads the newest release and copies the right files in. It never overwrites a file you already have.
+
+```
+curl -fsSL https://raw.githubusercontent.com/lasith-tekly/ai-plc/main/install.sh | sh -s -- kiro
+```
+
+Use `claude-code`, `codex` or `copilot` in place of `kiro` for those tools. To read the script first, open [`install.sh`](install.sh), or add `--dry-run` to see what would be copied. Windows users: use the manual steps below for now.
+
+**Manual steps.**
+
 1. Download `ai-plc-packages.zip` from the latest Release.
 2. Open the folder for your tool and copy it into your project:
 

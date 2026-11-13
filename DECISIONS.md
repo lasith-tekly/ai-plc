@@ -97,3 +97,8 @@
 ## 2026-11-09: Miro tested
 
 - Miro connects and creates the Mermaid maps as diagrams on a board (tested by the project owner). Reading an existing board is not yet confirmed, so it stays listed as untested.
+
+## 2026-11-13: One-command install
+
+- `install.sh` added (Mac and Linux). It takes the tool name, downloads the newest release zip (release candidates included), and copies that tool's folders into the project. It never overwrites an existing file unless `--force`, and has `--dry-run`. Windows keeps the manual steps for now.
+- Claude Code marketplace entry and a Kiro power are planned. The Agent Plugins standard (v1.0.0) covers skills and MCP only, so a Kiro power must be tested for the agent files before it is promised.

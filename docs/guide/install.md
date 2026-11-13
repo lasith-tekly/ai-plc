@@ -14,6 +14,16 @@ This page takes you from the download to a project that is ready for your first 
 
 A **project folder** is just a normal folder on your computer where AI-PLC will keep your work. Make a new one, for example `my-first-ai-plc-run` in your Documents folder. Keep it empty for now. Use a new folder for each idea.
 
+## Faster: one command (Mac and Linux)
+
+If you are comfortable opening a terminal, you can skip steps 2 and 3. Open a terminal in your project folder and run the line for your tool. It downloads the newest release and copies the right files in. It never overwrites a file you already have.
+
+```
+curl -fsSL https://raw.githubusercontent.com/lasith-tekly/ai-plc/main/install.sh | sh -s -- kiro
+```
+
+Use `claude-code`, `codex` or `copilot` in place of `kiro` for those tools. To see what would be copied without changing anything, add `--dry-run`. You can read the script first on [GitHub](https://github.com/lasith-tekly/ai-plc/blob/main/install.sh). On Windows, follow steps 2 and 3 below.
+
 ## Step 2: unzip the download
 
 1. Download `ai-plc-packages.zip` from the [Releases page](https://github.com/lasith-tekly/ai-plc/releases). It is listed under **Assets**.
