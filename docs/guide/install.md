@@ -76,14 +76,14 @@ This route has not been tested on Windows yet. If it fails, use steps 2 and 3 be
     Replace `kiro` with `claude-code`, `codex` or `copilot` if you use one of those tools. Add `-DryRun` at the end to preview without changing anything.
 4. **Check the files are there.** Type `dir -Force` and press **Enter**. You should see `.kiro` (or the folders for your tool).
 
-### If something goes wrong
+??? note "If something goes wrong"
 
-| What you see | What to do |
-| --- | --- |
-| `download failed` | Check your internet connection. On a work network, a firewall may block the download. Use steps 2 and 3 below instead |
-| `command not found: curl` | Use steps 2 and 3 below |
-| `kept (already exists)` | The folder already had that file, so it was left alone. This is safe. To replace it, add `--force` on a Mac (`-Force` on Windows) |
-| Nothing seems to happen | Wait a few seconds. The download can take a moment |
+    | What you see | What to do |
+    | --- | --- |
+    | `download failed` | Check your internet connection. On a work network, a firewall may block the download. Use steps 2 and 3 below instead |
+    | `command not found: curl` | Use steps 2 and 3 below |
+    | `kept (already exists)` | The folder already had that file, so it was left alone. This is safe. To replace it, add `--force` on a Mac (`-Force` on Windows) |
+    | Nothing seems to happen | Wait a few seconds. The download can take a moment |
 
 ## Step 2: unzip the download
 
