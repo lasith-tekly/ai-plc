@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "notion": {
+      "type": "http",
+      "url": "https://mcp.notion.com/mcp"
+    },
+    "atlassian": {
+      "type": "http",
+      "url": "https://mcp.atlassian.com/v2/mcp"
+    },
+    "miro": {
+      "type": "http",
+      "url": "https://mcp.miro.com/"
+    }
+  }
+}

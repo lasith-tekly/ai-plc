@@ -1,0 +1,112 @@
+# AI-PLC v1.0 profile (open, neutral). Draft for fine-tuning.
+# A profile tells the skills what to produce, in what order, and where humans decide.
+id: ai-plc
+version: "1.0"
+name: AI-PLC v1.0
+
+# Every deliverable follows the same review loop, whatever its mode:
+# the tool drafts it, the PM reviews it, and its status moves draft -> reviewed -> approved.
+review:
+  statuses: [draft, reviewed, approved, stale]
+  rule: "A deliverable is not used by anything downstream until the PM approves it."
+
+modes:          # each mode includes the ones above it
+  auto: "The tool drafts it from the conversation and sourced research."
+  assist: "The tool drafts it, but the PM must supply inputs or evidence."
+  human: "People or evidence outside the tool are needed; the tool gives a template and tracks status."
+
+run_modes:
+  ideation:  { phases: [1, 2], stops_at: gate_1 }
+  planning:  { phases: [1, 2, 3, 4], stops_at: gate_2 }
+  outcomes:  { phases: [1, 2, 3, 4], then: outcome_definition, stops_at: outcome_pack_issued }
+  full:      { phases: [1, 2, 3, 4], then: [outcome_definition, delivery_adapter], stops_at: user_stories }
+
+decisions:      # humans decide; the tool never approves its own gate
+  checkpoint_1: { after: 1, kind: product_checkpoint }
+  gate_1:       { after: 2, kind: portfolio_gate, pack: initial_business_case }
+  checkpoint_2: { after: 3, kind: product_checkpoint }
+  gate_2:       { after: 4, kind: portfolio_gate, pack: final_business_case }
+  outcomes: [approve, rework, pivot, stop]
+
+phases:
+  - id: 1
+    name: Assess market and customers
+    scope: ideation
+    deliverables:
+      - { id: "1.1", title: Problem and opportunity statement, mode: auto,   depends_on: [] }
+      - { id: "1.2", title: Market definition,                  mode: auto,   depends_on: ["1.1"] }
+      - { id: "1.3", title: Customer definition,                mode: auto,   depends_on: ["1.1"] }
+      - { id: "1.4", title: Existing research summary,          mode: assist, depends_on: [] }
+
+  - id: 2
+    name: Define vision and strategy
+    scope: ideation
+    deliverables:
+      - { id: "2.1",  title: Use cases,                       mode: auto,   depends_on: ["1.1", "1.3"] }
+      - { id: "2.2",  title: Outcome-oriented scope,          mode: auto,   depends_on: ["1.1", "2.1"] }
+      - { id: "2.3",  title: Experience strategy fit,         mode: assist, depends_on: ["2.1"] }
+      - { id: "2.4",  title: Partnership consideration,       mode: assist, depends_on: ["1.2", "2.1"] }
+      - { id: "2.5",  title: Services consideration,          mode: assist, depends_on: ["2.1"] }
+      - { id: "2.6",  title: Team skills gaps,                mode: assist, depends_on: ["2.2"] }
+      - { id: "2.7",  title: Pricing and billing model check, mode: assist, depends_on: ["1.2", "1.3"] }
+      - { id: "2.8",  title: Business model canvas,           mode: auto,   depends_on: ["1.1", "1.2", "1.3", "2.1"] }
+      - { id: "2.9",  title: Vision statement,                mode: auto,   depends_on: ["1.1", "2.1"] }
+      - { id: "2.10", title: Initial business case,          mode: assist, depends_on: ["1.2", "2.2", "2.7", "2.8", "2.9"], feeds: gate_1 }
+
+  - id: 3
+    name: Converge on solution
+    scope: planning
+    deliverables:
+      - { id: "3.1", title: Prioritised capabilities,                 mode: auto,   depends_on: ["2.1", "2.2"] }
+      - { id: "3.2", title: Solution research, design and content,    mode: assist, depends_on: ["3.1"] }
+      - { id: "3.3", title: Usability tests,                          mode: human,  depends_on: ["3.2"] }
+      - { id: "3.4", title: Early positioning and messaging,          mode: auto,   depends_on: ["1.2", "2.9"] }
+      - { id: "3.5", title: Pilot plan,                               mode: assist, depends_on: ["3.2", "3.3"] }
+      - { id: "3.6", title: MVP scope,                                mode: auto,   depends_on: ["3.1", "3.3"] }
+
+  - id: 4
+    name: Evaluate viability
+    scope: planning
+    deliverables:
+      - { id: "4.1",  title: Legal, regulatory and security assessment, mode: human,  depends_on: ["3.6"] }
+      - { id: "4.2",  title: Risk assessment,        mode: assist, depends_on: ["3.6"] }
+      - { id: "4.3",  title: Implementability,       mode: assist, depends_on: ["3.2", "3.6"] }
+      - { id: "4.4",  title: Product viability,      mode: assist, depends_on: ["2.10", "3.6"] }
+      - { id: "4.5",  title: Market viability,       mode: auto,   depends_on: ["1.2"] }
+      - { id: "4.6",  title: Measurement plan,       mode: assist, depends_on: ["2.2", "3.6"] }
+      - { id: "4.7",  title: Value assessment,       mode: assist, depends_on: ["4.4", "4.5"] }
+      - { id: "4.8",  title: Pricing strategy,       mode: assist, depends_on: ["2.7", "4.4"] }
+      - { id: "4.9",  title: Services review,        mode: assist, depends_on: ["2.5", "3.6"] }
+      - { id: "4.10", title: Final business case,    mode: assist, depends_on: ["4.1", "4.2", "4.3", "4.4", "4.5", "4.6", "4.7", "4.8", "4.9"], feeds: gate_2 }
+
+outcome_definition:       # new step; refuses to run until gate_2 is approved
+  requires: gate_2
+  mode: assist
+  depends_on: ["3.1", "3.6", "4.2", "4.6", "4.10"]
+  produces: outcome_pack
+  deliverables:
+    - { id: "O.n",  title: Outcomes (one file each),     mode: assist, depends_on: ["3.1", "3.6", "4.2", "4.6", "4.10"] }
+    - { id: "O.M",  title: Outcome dependency map,       mode: auto,   depends_on: ["O.n"] }
+    - { id: "O.R",  title: Outcome roadmap,              mode: auto,   depends_on: ["O.n", "O.M"] }
+    - { id: "O.I",  title: Outcome Pack index,           mode: auto,   depends_on: ["O.n", "O.M", "O.R"] }
+
+delivery_adapters:        # chosen by the PM at the start of a full run
+  - scrum                 # writes requirements, epics and user stories
+  - ai-dlc                # hands outcomes to AI-DLC, which writes its own
+  - plain-markdown        # a readable outcome list
+
+delivery:                 # runs only in --full, after the Outcome Pack is issued
+  requires: outcome_pack_issued
+  scrum:
+    - { id: "D.1", title: Requirements,                 mode: assist, depends_on: ["outcome-pack"] }
+    - { id: "D.2", title: Requirements dependency map,  mode: auto,   depends_on: ["D.1"] }
+    - { id: "D.3", title: Epics,                        mode: auto,   depends_on: ["D.1", "D.2"] }
+    - { id: "D.4", title: User stories,                 mode: assist, depends_on: ["D.1", "D.3"] }
+    - { id: "D.5", title: Story dependency map and order, mode: auto, depends_on: ["D.4"] }
+    - { id: "D.6", title: Delivery roadmap,             mode: auto,   depends_on: ["D.5", "O.R"] }
+    - { id: "D.7", title: Delivery index and traceability, mode: auto, depends_on: ["D.6"] }
+  ai-dlc:
+    - { id: "H.1", title: AI-DLC handoff briefs (one per outcome), mode: auto, depends_on: ["outcome-pack"] }
+    - { id: "H.2", title: Handoff roadmap, order and run notes, mode: auto, depends_on: ["H.1", "O.R"] }
+  plain-markdown:
+    - { id: "P.1", title: Outcome list with dependencies and roadmap, mode: auto, depends_on: ["outcome-pack"] }

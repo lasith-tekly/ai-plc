@@ -145,7 +145,18 @@ Everywhere else in this guide the command is written as `/ai-plc`. Use the one f
 
 ## Claude Code plugin
 
-Claude Code runs in a **terminal**, a window where you type commands. If you have not used one, use Kiro or the drop-in folder instead. If you are comfortable, open a terminal in your project folder and run:
+Claude Code runs in a **terminal**, a window where you type commands. If you have not used one, use Kiro or the drop-in folder instead. If you are comfortable, there are two ways to install the plugin.
+
+**From the AI-PLC marketplace (no download).** In your terminal, run these two commands, one after the other:
+
+```
+claude plugin marketplace add lasith-tekly/ai-plc
+claude plugin install ai-plc@ai-plc
+```
+
+Or, inside a Claude Code session, type `/plugin marketplace add lasith-tekly/ai-plc` and then `/plugin install ai-plc@ai-plc`. Claude Code asks where to install it: choose **Install for you** to use it in every project. Then run `/ai-plc:ai-plc` in the chat. If it does not show, run `/reload-plugins`, or quit and reopen Claude Code. To update later, run `claude plugin marketplace update ai-plc`.
+
+**From the download.** Open a terminal in your project folder and run:
 
 ```
 claude --plugin-dir /path/to/ai-plc-packages/claude-code-plugin/ai-plc

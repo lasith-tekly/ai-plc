@@ -18,6 +18,17 @@ The script writes a `dist` folder next to the repo with:
 
 The version is set in `build/build_packages.py`. It stays at a release candidate until the second test run on a real idea passes.
 
+## Refresh the Claude Code marketplace
+
+The repository is also a Claude Code plugin marketplace. The plugin in `plugins/ai-plc` and `.claude-plugin/marketplace.json` are generated. After any change to the source, run:
+
+```
+python3 tools/sync_marketplace.py
+claude plugin validate .
+```
+
+Then commit `plugins/` and `.claude-plugin/`. Never edit them by hand. Users install with `claude plugin marketplace add lasith-tekly/ai-plc` and `claude plugin install ai-plc@ai-plc`.
+
 ## Test before you release
 
 Follow `TEST-GUIDE.md` (also in this site under [Test guide](../TEST-GUIDE.md)) on a dummy idea. For connectors, test on a personal or sandbox site first.

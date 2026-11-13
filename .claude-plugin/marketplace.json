@@ -1,0 +1,15 @@
+{
+  "name": "ai-plc",
+  "description": "AI-PLC: an open-source agent harness for product ideation and planning, led by the PM.",
+  "owner": {
+    "name": "AI-PLC contributors"
+  },
+  "plugins": [
+    {
+      "name": "ai-plc",
+      "source": "./plugins/ai-plc",
+      "description": "AI-native product lifecycle for product managers: ideation, planning, outcomes and delivery with human review stops.",
+      "version": "1.0.0-rc2"
+    }
+  ]
+}

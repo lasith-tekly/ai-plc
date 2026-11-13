@@ -49,6 +49,15 @@ Use `claude-code`, `codex` or `copilot` in place of `kiro` for those tools. Afte
 
 Use `claude-code`, `codex` or `copilot` in place of `kiro`. Add `-DryRun` to see what would be copied.
 
+**Claude Code plugin, no download.** In a terminal:
+
+```
+claude plugin marketplace add lasith-tekly/ai-plc
+claude plugin install ai-plc@ai-plc
+```
+
+Then run `/ai-plc:ai-plc` in Claude Code. If it does not show, run `/reload-plugins` or restart Claude Code.
+
 **Manual steps.**
 
 1. Download `ai-plc-packages.zip` from the latest Release.
@@ -57,7 +66,7 @@ Use `claude-code`, `codex` or `copilot` in place of `kiro`. Add `-DryRun` to see
 | Folder | Tool |
 | --- | --- |
 | `kiro/.kiro` | Kiro (see `kiro/INSTALL.md`) |
-| `claude-code-plugin/ai-plc` | Claude Code, as a plugin |
+| `claude-code-plugin/ai-plc` | Claude Code, as a plugin (or install it from the marketplace, below) |
 | `claude-code-project/.claude` | Claude Code, as a drop-in folder |
 | `codex/.codex` and `codex/.agents` | Codex |
 | `copilot/.github` | GitHub Copilot (experimental) |
