@@ -4,7 +4,7 @@
   "version": "1.0.0-rc2",
   "description": "Set up AI-PLC in a Kiro project. AI-PLC is an open-source agent harness for product ideation and planning, led by the product manager, with human approval at every stop.",
   "author": {
-    "name": "AI-PLC contributors"
+    "name": "Lasith Jayarathne"
   },
   "homepage": "https://lasith-tekly.github.io/ai-plc/",
   "repository": "https://github.com/lasith-tekly/ai-plc",

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="AI-PLC logo">
+  <rect width="512" height="512" rx="96" fill="#0F1419"/>
+  <path d="M92 300 C170 300 190 212 256 212 C322 212 342 300 396 300" fill="none" stroke="#6FA8DC" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="92" cy="300" r="26" fill="#6FA8DC"/>
+  <circle cx="256" cy="212" r="26" fill="#6FA8DC"/>
+  <rect x="392" y="196" width="26" height="208" rx="13" fill="#E6E9EE"/>
+  <text x="256" y="452" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" fill="#E6E9EE">AI-PLC</text>
+</svg>

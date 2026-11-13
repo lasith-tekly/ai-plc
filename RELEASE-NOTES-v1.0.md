@@ -17,6 +17,7 @@ See "Before you start, and how to give feedback" in `README.md` inside the zip, 
 | Kiro, phases 1 to 4, Outcome Pack, three adapters (Scrum, plain-markdown, AI-DLC) | Run on a dummy idea. All pass, with known issues below |
 | Atlassian (Jira and Confluence) in Kiro: connect, read, create items, create a page | Passed on a personal test site |
 | One-command install (`install.sh`) in Kiro on a Mac | Passed. Files copied, project opened in Kiro |
+| AI-PLC Setup power in Kiro (import from GitHub, then "set up AI-PLC") | Passed. Preview shown, files checked, existing files kept |
 | Claude Code marketplace install (`ai-plc@ai-plc`) | Validates and installs in a clean setup: 13 skills, 7 agents, 3 connections load. Not yet run end to end in Claude Code |
 | One-command install on Windows (`install.ps1`), and in Claude Code, Codex and Copilot | Written, not yet tested in the tool. Copying is tested for all four tools |
 | Claude Code plugin | Passes `claude plugin validate`. Run live through Checkpoint 1 on an earlier build |

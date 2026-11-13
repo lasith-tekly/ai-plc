@@ -206,7 +206,7 @@ def build_claude(root, loc, plugin_prefix, plugin):
                     "displayName": "AI-PLC",
                     "version": VERSION,
                     "description": "AI-native product lifecycle for product managers: ideation, planning, outcomes and delivery with human review stops.",
-                    "author": {"name": "AI-PLC contributors"},
+                    "author": {"name": "Lasith Jayarathne"},
                     "license": "Apache-2.0",
                     "keywords": ["product-management", "lifecycle", "ai-plc"],
                 },

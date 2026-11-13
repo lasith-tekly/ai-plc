@@ -32,7 +32,7 @@ def main():
     market = {
         "name": "ai-plc",
         "description": "AI-PLC: an open-source agent harness for product ideation and planning, led by the PM.",
-        "owner": {"name": "AI-PLC contributors"},
+        "owner": {"name": "Lasith Jayarathne"},
         "plugins": [
             {
                 "name": manifest["name"],

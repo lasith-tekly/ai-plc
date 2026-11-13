@@ -49,6 +49,8 @@ Use `claude-code`, `codex` or `copilot` in place of `kiro` for those tools. Afte
 
 Use `claude-code`, `codex` or `copilot` in place of `kiro`. Add `-DryRun` to see what would be copied.
 
+**Kiro, from inside Kiro.** Open the Powers panel, choose Add Custom Power, then Import power from GitHub, and enter `https://github.com/lasith-tekly/ai-plc/tree/main/powers/ai-plc`. Then ask Kiro to "set up AI-PLC". See the [install guide](https://lasith-tekly.github.io/ai-plc/guide/install-kiro/).
+
 **Claude Code plugin, no download.** In a terminal:
 
 ```
