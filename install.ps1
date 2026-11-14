@@ -24,7 +24,7 @@ $ErrorActionPreference = "Stop"
 $ProgressPreference = "SilentlyContinue"
 
 $Repo = "lasith-tekly/ai-plc"
-$FallbackTag = "v1.0.0-rc2"
+$FallbackTag = "v1.0.0-rc3"
 
 function Show-Usage {
     Write-Host "Usage: install.ps1 <tool> [-Dir PATH] [-Version TAG] [-Zip FILE] [-DryRun] [-Force]"

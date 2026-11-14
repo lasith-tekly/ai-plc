@@ -13,7 +13,7 @@
 set -eu
 
 REPO="lasith-tekly/ai-plc"
-FALLBACK_TAG="v1.0.0-rc2"
+FALLBACK_TAG="v1.0.0-rc3"
 
 TOOL=""
 DIR="."
