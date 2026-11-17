@@ -6,6 +6,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -31,6 +32,13 @@ theme:
     - search.suggest
     - content.code.copy
     - content.action.edit
+
+extra:
+  # Docs page counts (GoatCounter: no cookies, no personal data).
+  # code is the GoatCounter site code; set it to "" to turn counting off.
+  analytics:
+    provider: custom
+    code: "ai-plc"
 
 extra_css:
   - stylesheets/extra.css

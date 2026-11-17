@@ -1,0 +1,10 @@
+{#-
+  Privacy-friendly page counts for the docs site with GoatCounter
+  (https://www.goatcounter.com): no cookies, no personal data, no consent banner.
+  Turned on by setting extra.analytics.code in mkdocs.yml to the GoatCounter
+  site code. While the code is empty nothing is loaded.
+-#}
+{% set gc_code = config.extra.analytics.code %}
+{% if gc_code %}
+<script data-goatcounter="https://{{ gc_code }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+{% endif %}
