@@ -35,10 +35,10 @@ theme:
 
 extra:
   # Docs page counts (GoatCounter: no cookies, no personal data).
-  # Set code to the GoatCounter site code to turn it on; empty = off.
+  # code is the GoatCounter site code; set it to "" to turn counting off.
   analytics:
     provider: custom
-    code: ""
+    code: "ai-plc"
 
 extra_css:
   - stylesheets/extra.css
