@@ -1,3 +1,8 @@
+---
+seo_title: "Install AI-PLC in Claude Code"
+description: "Install AI-PLC in Claude Code as a plugin or a drop-in folder, and run product ideation and planning with AI agents from your terminal."
+---
+
 # Install in Claude Code
 
 Claude Code runs in a **terminal**, a window where you type commands. There are three ways to install AI-PLC.

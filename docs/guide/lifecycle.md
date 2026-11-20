@@ -1,3 +1,8 @@
+---
+seo_title: "The product lifecycle in four stages"
+description: "The four stages of a product's life in AI-PLC: Product Ideation and Product Planning are automated with AI agents, Development is a handover, Launching is not built yet."
+---
+
 # The product lifecycle
 
 AI-PLC follows the life of a product in four stages. Most teams already work this way, whatever they call the stages.

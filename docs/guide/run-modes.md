@@ -1,3 +1,8 @@
+---
+seo_title: "Choose a run mode"
+description: "Choose how far AI-PLC takes your product idea in one run, from ideation only to full planning. You can stop at any decision point and continue later."
+---
+
 # 3. Choose a run mode
 
 A run mode is how far you want AI-PLC to take your idea in one go. You choose it when you start. If you are not sure what the phases are, read [What is AI-PLC?](what-is-ai-plc.md) first.

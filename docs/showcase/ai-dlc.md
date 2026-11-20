@@ -1,3 +1,8 @@
+---
+seo_title: "The AI-DLC hand-over"
+description: "How AI-PLC hands over to a team using AI-DLC: one self-contained brief per outcome plus a hand-over order. Sample from a dummy run."
+---
+
 # The AI-DLC hand-over
 
 **What it is:** the second way to hand work to a development team. With `--adapter ai-dlc`, AI-PLC does **not** write requirements or stories. It writes **one self-contained brief per outcome**, plus a **hand-over order**, for a team that uses the AI-DLC method to write its own requirements and stories. It is built by the delivery agent with the `delivery-ai-dlc` skill.

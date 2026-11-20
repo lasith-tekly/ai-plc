@@ -1,3 +1,8 @@
+---
+seo_title: "Install AI-PLC"
+description: "Install AI-PLC in Kiro, Claude Code, Codex or GitHub Copilot (experimental). No coding needed: pick your AI tool and get a project ready for a first run."
+---
+
 # 2. Install
 
 This page helps you pick your tool and get a project ready for your first run. No coding is needed. Each tool has its own page with the steps.

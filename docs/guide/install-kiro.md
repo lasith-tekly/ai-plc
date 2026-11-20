@@ -1,3 +1,8 @@
+---
+seo_title: "Install AI-PLC in Kiro"
+description: "Install AI-PLC in Kiro, the most tested tool for the AI-native product lifecycle. Three ways to install, all ending with the same files in your project."
+---
+
 # Install in Kiro
 
 Kiro is the easiest tool to start with and the most tested. Choose one of three ways. All three end with the same files in your project.

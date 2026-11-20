@@ -1,9 +1,35 @@
 {% extends "base.html" %}
 
-{#- Ownership tag for Google Search Console. The value is set in mkdocs.yml
-    (extra.google_site_verification); empty = no tag. -#}
+{#- Search and link-preview titles. The values are set in mkdocs.yml under
+    extra (seo_home_title, seo_title_suffix). A page can set its own with
+    seo_title in its front matter; otherwise its navigation title is used.
+    The page header and the navigation are unchanged. -#}
+{% set seo_desc = page.meta.description if page and page.meta and page.meta.description else config.site_description %}
+{% if page and page.is_homepage %}
+  {% set seo_title = config.extra.seo_home_title or config.site_name %}
+{% elif page and page.title %}
+  {% set seo_title = (page.meta.seo_title or (page.title | striptags)) ~ " | " ~ (config.extra.seo_title_suffix or config.site_name) %}
+{% else %}
+  {% set seo_title = config.site_name %}
+{% endif %}
+
+{% block htmltitle %}
+  <title>{{ seo_title }}</title>
+{% endblock %}
+
 {% block extrahead %}
+  {#- Ownership tag for Google Search Console. The value is set in mkdocs.yml
+      (extra.google_site_verification); empty = no tag. -#}
   {% if config.extra.google_site_verification %}
   <meta name="google-site-verification" content="{{ config.extra.google_site_verification }}">
   {% endif %}
+  {#- Link previews (LinkedIn, Slack, and so on). -#}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AI-PLC">
+  <meta property="og:title" content="{{ seo_title }}">
+  <meta property="og:description" content="{{ seo_desc }}">
+  {% if page and page.canonical_url %}
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  {% endif %}
+  <meta name="twitter:card" content="summary">
 {% endblock %}
