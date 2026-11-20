@@ -31,5 +31,13 @@
   {% if page and page.canonical_url %}
   <meta property="og:url" content="{{ page.canonical_url }}">
   {% endif %}
-  <meta name="twitter:card" content="summary">
+  {#- Preview image, 1200x630. Source: tools/social-card.html (open it in
+      Chrome at 1200x630 and take a screenshot to regenerate). -#}
+  {% set seo_image = config.site_url ~ "assets/social-card.png" %}
+  <meta property="og:image" content="{{ seo_image }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AI-PLC: the AI-native Product Lifecycle for product managers">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ seo_image }}">
 {% endblock %}
