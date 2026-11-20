@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{#- Ownership tag for Google Search Console. The value is set in mkdocs.yml
+    (extra.google_site_verification); empty = no tag. -#}
+{% block extrahead %}
+  {% if config.extra.google_site_verification %}
+  <meta name="google-site-verification" content="{{ config.extra.google_site_verification }}">
+  {% endif %}
+{% endblock %}
