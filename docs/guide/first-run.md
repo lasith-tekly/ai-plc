@@ -1,3 +1,8 @@
+---
+seo_title: "Your first AI-PLC run"
+description: "Your first AI-PLC run, step by step: start with a small dummy idea, answer the questions, and review the drafts at Checkpoint 1 and Gate 1."
+---
+
 # 5. Your first run
 
 Use a dummy idea first. A small, low-stakes one is fine.

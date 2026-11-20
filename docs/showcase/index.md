@@ -1,3 +1,8 @@
+---
+seo_title: "What AI-PLC produces"
+description: "See what AI-PLC produces on one complete dummy run, from market and customer discovery to an Outcome Pack and delivery-ready stories. Sample figures are synthetic."
+---
+
 # What AI-PLC produces
 
 This section shows what AI-PLC produced on **one complete run**, so you can judge the output before you try it. Every output is explained: what it is, how it was built, and how it connects to the others.

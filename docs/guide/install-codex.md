@@ -1,3 +1,8 @@
+---
+seo_title: "Install AI-PLC in Codex"
+description: "Install AI-PLC in Codex with one command and run AI-assisted product ideation and planning from your project folder."
+---
+
 # Install in Codex
 
 ## Way 1: one command

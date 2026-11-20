@@ -1,3 +1,8 @@
+---
+seo_title: "Get started with AI-PLC"
+description: "Get started with AI-PLC in eight short steps: what it is, how to install it in Kiro, Claude Code or Codex, and your first product ideation and planning run."
+---
+
 # Start here
 
 Follow these steps in order. Each page ends with a **Next** button that takes you to the following step. Start with a small idea.

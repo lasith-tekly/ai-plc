@@ -1,3 +1,8 @@
+---
+seo_title: "Checkpoints and gates: human approval at every stop"
+description: "How human approval works in AI-PLC: the two checkpoints and two gates where a person reviews and decides. The AI never approves its own work."
+---
+
 # 6. Decision points: checkpoints and gates
 
 AI-PLC stops four times and waits for a person to decide. Two are **checkpoints** and two are **gates**.

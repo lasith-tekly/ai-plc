@@ -1,3 +1,8 @@
+---
+seo_title: "The Outcome Pack"
+description: "The AI-PLC Outcome Pack: the handover from product planning to development, as measurable outcomes with a measure, baseline, target and horizon. Sample from a dummy run."
+---
+
 # The Outcome Pack
 
 **What it is:** the handover from planning to development. It turns an approved plan into **nine measurable outcomes**, each with a measure, a baseline, a target and a horizon, in the order they should be delivered. It is built by the **outcome agent** with the `outcome-pack` skill, and it can only start after Gate 2 is approved.

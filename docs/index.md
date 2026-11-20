@@ -1,6 +1,10 @@
-# AI-PLC
+---
+description: "AI-PLC is an open-source, AI-native product lifecycle for product managers. AI agents draft your ideation and planning deliverables; you approve at every stop."
+---
 
-AI-PLC is an AI-native product lifecycle for product managers. You describe an idea and run one command. AI agents draft each deliverable across the Ideation and Planning stages, from market and customer discovery to an Outcome Pack and delivery-ready stories. **You review and approve at every stop.** The AI never approves its own work.
+# AI-PLC: the AI-native Product Lifecycle
+
+AI-PLC is an open-source, AI-native product lifecycle for product managers. You describe an idea and run one command. AI agents draft each deliverable across the Ideation and Planning stages, from market and customer discovery to an Outcome Pack and delivery-ready stories. **You review and approve at every stop.** The AI never approves its own work.
 
 It is plain files: markdown skills, agent roles, a YAML profile and templates that your AI coding tool loads. There is nothing to host and no service to run. Licence: Apache 2.0.
 

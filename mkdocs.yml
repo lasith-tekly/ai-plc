@@ -1,5 +1,5 @@
 site_name: AI-PLC Documentation
-site_description: An AI-native product lifecycle for product managers
+site_description: AI-PLC is an open-source, AI-native product lifecycle for product managers. AI agents draft your ideation and planning deliverables; you approve at every stop.
 site_url: https://lasith-tekly.github.io/ai-plc/
 repo_url: https://github.com/lasith-tekly/ai-plc
 edit_uri: edit/main/docs/
@@ -34,6 +34,9 @@ theme:
     - content.action.edit
 
 extra:
+  # Browser-tab and search-result titles. The header keeps site_name.
+  seo_home_title: "AI-PLC: the open-source, AI-native Product Lifecycle for product managers"
+  seo_title_suffix: "AI-PLC, the AI-native Product Lifecycle"
   # Ownership tag for Google Search Console (public value, not a secret).
   google_site_verification: "1T1heEajZXbINCQPp9v2dqeSJJha9Awm6kMs2XrxYD0"
   # Docs page counts (GoatCounter: no cookies, no personal data).

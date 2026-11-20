@@ -1,3 +1,7 @@
+---
+description: "The AI-PLC roadmap: what is automated today, what happens before v1.0 is published, and what comes later."
+---
+
 # Roadmap
 
 ## Where AI-PLC is today
