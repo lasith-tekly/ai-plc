@@ -34,6 +34,8 @@ theme:
     - content.action.edit
 
 extra:
+  # Ownership tag for Google Search Console (public value, not a secret).
+  google_site_verification: "1T1heEajZXbINCQPp9v2dqeSJJha9Awm6kMs2XrxYD0"
   # Docs page counts (GoatCounter: no cookies, no personal data).
   # code is the GoatCounter site code; set it to "" to turn counting off.
   analytics:
