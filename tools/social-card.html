@@ -2,42 +2,43 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{width:1200px;height:630px;overflow:hidden;background:#0c0720;font-family:'Inter',sans-serif;color:#f5f3ff;-webkit-font-smoothing:antialiased}
 #bg{position:absolute;inset:0;background:
- radial-gradient(700px 520px at 24% 42%, rgba(124,77,255,.34), transparent 70%),
- radial-gradient(520px 420px at 92% 96%, rgba(196,120,255,.18), transparent 70%),
+ radial-gradient(760px 520px at 50% 40%, rgba(124,77,255,.36), transparent 70%),
+ radial-gradient(520px 400px at 94% 100%, rgba(196,120,255,.16), transparent 70%),
+ radial-gradient(520px 400px at 6% 100%, rgba(196,120,255,.12), transparent 70%),
  linear-gradient(180deg,#120a2e 0%,#0c0720 100%)}
-#grid{position:absolute;inset:-60px;background-image:linear-gradient(rgba(183,156,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(183,156,255,.07) 1px,transparent 1px);background-size:60px 60px;-webkit-mask-image:radial-gradient(circle at 40% 50%,#000 25%,transparent 80%)}
-#left{position:absolute;left:72px;top:0;bottom:0;width:640px;display:flex;flex-direction:column;justify-content:center}
-.kick{font-size:19px;font-weight:600;letter-spacing:3.5px;color:#b79cff;display:flex;align-items:center;gap:12px;margin-bottom:22px}
-.kick i{display:block;width:11px;height:11px;border-radius:3px;background:#8b5cf6;transform:rotate(45deg)}
-.w{font-size:148px;font-weight:800;letter-spacing:-5px;line-height:1;background:linear-gradient(135deg,#ffffff 10%,#c9b6ff 55%,#8b5cf6 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 36px rgba(139,92,246,.55));margin-left:-6px}
-.tag{font-size:39px;font-weight:700;line-height:1.16;letter-spacing:-.9px;margin-top:20px;color:#fff}
+#grid{position:absolute;inset:-60px;background-image:linear-gradient(rgba(183,156,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(183,156,255,.07) 1px,transparent 1px);background-size:60px 60px;-webkit-mask-image:radial-gradient(circle at 50% 45%,#000 25%,transparent 80%)}
+/* Everything essential stays inside the centre 600px so square crops keep it. */
+#mid{position:absolute;left:300px;width:600px;top:44px;text-align:center}
+.kick{font-size:17px;font-weight:600;letter-spacing:3.5px;color:#b79cff;display:inline-flex;align-items:center;gap:12px}
+.kick i{display:block;width:10px;height:10px;border-radius:3px;background:#8b5cf6;transform:rotate(45deg)}
+.w{font-size:150px;font-weight:800;letter-spacing:-5px;line-height:1;margin-top:10px;background:linear-gradient(135deg,#ffffff 10%,#c9b6ff 55%,#8b5cf6 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 36px rgba(139,92,246,.6))}
+.tag{font-size:37px;font-weight:700;line-height:1.16;letter-spacing:-.9px;margin-top:12px;color:#fff;white-space:nowrap}
 .tag b{color:#b79cff;font-weight:700}
-.sub{font-size:23px;font-weight:500;color:#cfc2ff;margin-top:18px;line-height:1.35}
-.url{margin-top:30px;display:inline-flex;align-self:flex-start;padding:14px 26px;border-radius:999px;background:#fff;color:#2a1270;font-size:23px;font-weight:700;box-shadow:0 0 44px rgba(139,92,246,.55)}
-#right{position:absolute;right:64px;top:0;bottom:0;width:392px;display:flex;flex-direction:column;justify-content:center}
-.row{position:relative;height:74px;margin-bottom:11px;border-radius:16px;background:rgba(255,255,255,.05);border:1.5px solid rgba(183,156,255,.3);overflow:hidden;display:flex;align-items:center;padding:0 18px;gap:15px}
-.row .fill{position:absolute;inset:0;background:linear-gradient(90deg,rgba(124,77,255,.36),rgba(124,77,255,.07))}
-.row .n{position:relative;flex:none;width:38px;height:38px;border-radius:50%;background:#8b5cf6;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;color:#fff}
-.row .t{position:relative;flex:1;font-size:22px;font-weight:700;color:#fff;white-space:nowrap}
-.row .tk{position:relative;flex:none;width:30px;height:30px;border-radius:8px;background:#22c08b;color:#06281c;display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:800}
-.cap{font-size:17px;font-weight:600;letter-spacing:2.5px;color:#b79cff;margin-bottom:14px}
-.foot{font-size:17px;color:#b9addc;margin-top:6px}
+.sub{font-size:21px;font-weight:500;color:#cfc2ff;margin-top:14px;line-height:1.35}
+.url{margin-top:20px;display:inline-flex;padding:12px 26px;border-radius:999px;background:#fff;color:#2a1270;font-size:22px;font-weight:700;box-shadow:0 0 44px rgba(139,92,246,.55)}
+/* Supporting detail: can be cropped without harm. */
+#steps{position:absolute;left:0;right:0;bottom:66px;display:flex;justify-content:center;align-items:center;gap:7px}
+.st{display:flex;align-items:center;gap:8px;height:42px;padding:0 13px 0 7px;border-radius:999px;background:linear-gradient(90deg,rgba(124,77,255,.4),rgba(124,77,255,.12));border:1.5px solid rgba(183,156,255,.34);font-size:15.5px;font-weight:600;color:#fff;white-space:nowrap}
+.st .n{flex:none;width:28px;height:28px;border-radius:50%;background:#8b5cf6;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700}
+.st.last{background:linear-gradient(135deg,#7c4dff,#a87bff);border-color:transparent}
+.st.last .n{background:#22c08b;color:#06281c;font-weight:800}
+.ar{color:#8f7fd0;font-size:16px;font-weight:700}
+#foot{position:absolute;left:0;right:0;bottom:26px;text-align:center;font-size:16px;color:#b9addc}
 </style></head><body>
 <div id="bg"></div><div id="grid"></div>
-<div id="left">
+<div id="mid">
   <div class="kick"><i></i>OPEN SOURCE · APACHE 2.0</div>
   <div class="w">AI-PLC</div>
   <div class="tag">The <b>AI-native Product Lifecycle</b><br>for product managers</div>
   <div class="sub">From raw idea to measurable outcomes.<br>AI drafts. You decide at every stop.</div>
   <div class="url">github.com/lasith-tekly/ai-plc</div>
 </div>
-<div id="right">
-  <div class="cap">WHAT A RUN COVERS</div>
-  <div class="row"><div class="fill"></div><div class="n">1</div><div class="t">Market and customers</div><div class="tk">✓</div></div>
-  <div class="row"><div class="fill"></div><div class="n">2</div><div class="t">Vision and strategy</div><div class="tk">✓</div></div>
-  <div class="row"><div class="fill"></div><div class="n">3</div><div class="t">Converge on solution</div><div class="tk">✓</div></div>
-  <div class="row"><div class="fill"></div><div class="n">4</div><div class="t">Evaluate viability</div><div class="tk">✓</div></div>
-  <div class="row"><div class="fill"></div><div class="n">5</div><div class="t">Outcome Pack</div><div class="tk">✓</div></div>
-  <div class="foot">Runs in Kiro, Claude Code and Codex</div>
+<div id="steps">
+  <div class="st"><span class="n">1</span>Market and customers</div><span class="ar">›</span>
+  <div class="st"><span class="n">2</span>Vision and strategy</div><span class="ar">›</span>
+  <div class="st"><span class="n">3</span>Converge on solution</div><span class="ar">›</span>
+  <div class="st"><span class="n">4</span>Evaluate viability</div><span class="ar">›</span>
+  <div class="st last"><span class="n">✓</span>Outcome Pack</div>
 </div>
+<div id="foot">Runs in Kiro, Claude Code and Codex</div>
 </body></html>
